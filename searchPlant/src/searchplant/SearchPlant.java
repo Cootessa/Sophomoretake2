@@ -43,7 +43,7 @@ public class SearchPlant {
         fileIn.close();
 
         //prints header for columns 
-        System.out.println("\tPlant Name\tZones");
+        System.out.println("Plant Name  Zones");
 
         //for loop to print plant name + hardiness zone from array
         for (int i = 0; i < name.size(); i++) {
