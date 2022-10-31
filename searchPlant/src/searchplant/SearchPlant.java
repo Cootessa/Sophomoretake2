@@ -48,7 +48,7 @@ public class SearchPlant {
         //for loop to print plant name + hardiness zone from array
         for (int i = 0; i < name.size(); i++) {
             //output
-            System.out.println("\n" + name.get(i) + "\t" + zone.get(i)+"\n");
+            System.out.println("" + name.get(i) + "  \n" + zone.get(i));
         }
         
     }
