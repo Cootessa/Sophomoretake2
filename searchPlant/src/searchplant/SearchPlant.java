@@ -28,16 +28,15 @@ public class SearchPlant {
         Scanner fileIn;
         fileIn = new Scanner(new File("plants.txt"));
          //1st array that holds plant name
-        ArrayList<String> zone = new ArrayList();
-        //2nd array that holds hardiness zones
         ArrayList<String> name = new ArrayList();
+        //2nd array that holds hardiness zones
+        ArrayList<String> zone = new ArrayList();
 
         //while loop to read through txt file
         while (fileIn.hasNext()) {
             //adding elements to arrays
-             zone.add(fileIn.nextLine());
-             name.add(fileIn.nextLine());
-           
+            name.add(fileIn.nextLine());
+            zone.add(fileIn.nextLine());    
         }
 
         //close file
