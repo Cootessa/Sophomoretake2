@@ -1,13 +1,9 @@
-Rose		5,6,7,8,9	
+Rose  5,6,7,8,9
+Daffodil  3,4,5,6,7,8
+Daisy  4,5,6,7,8,9
+Lily  3,4,5,6,7,8
+Geranium  3,4,5,6,7,8,9
+Moonflower  10,11,12
 
-Daffodil 	3,4,5,6,7,8
-
-Daisy		4,5,6,7,8,9
-
-Lily		3,4,5,6,7,8
-
-Geranium	3,4,5,6,7,8,9
-
-Moonflower	10,11,12
 
 
