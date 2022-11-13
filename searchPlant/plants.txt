@@ -4,6 +4,102 @@ Daisy  4,5,6,7,8,9
 Lily  3,4,5,6,7,8
 Geranium  3,4,5,6,7,8,9
 Moonflower  10,11,12
-
-
+Lavender 5,6,7,8,9
+Morning Glory 3,4,5,6,7,8,9,10
+Marigold 2,3,4,5,6,7,8,9,10,11
+Tulip 3,4,5,6,7
+Wisteria 5,6,7,8,9
+Petunia 9,10,11,12
+Lilac 3,4,5,6,7,8
+Amaryllis 9,10,11
+Agapanthus 8,9,10
+Hollyhock 3,4,5,6,7,8
+Marguerite 8,9,10,11
+Coreopsis 4,5,6,7,8,9
+Rosea Ice Plant 9,10,11,12
+Abutilon	9,10
+Aconite	4,5,6,7
+Ageratum	10,11
+Alchemilla	3,4,5,6,7,8
+Allium	3,4,5,6,7,8
+Alstroemeria	7,8,9
+Alyssum	5,6,7,8,9
+Amaranthus	9,10,11
+Anemone	3,7,8
+Anise Hyssop	4,5,6,7,8
+Armeria Maritima	4,5,6,7,8
+Aster	3,4,5,6,7,8
+Azalea	6,7,8,9
+Baby's Breath	4,5,6,7,8,9
+Bachelor's Button	3,4,5,6,7,8
+Balloon Flower	3,4,5,6,7,8
+Ballota	7,8,9,10
+Bee Balm	3,4,5,6,7,8,9
+Begonia	2,3,4,5,6,7,8,9,10
+Bellflower	4
+Bergamot	3,4,5,6,7,8
+Bergenia	3,4,5,6,7,8
+Billbergia	10
+Black-eyed Susan	3,4,5,6,7,8,9,10
+Blanket Flower	3,4,5,6,7,8,9
+Blazing Star	3,4,5,6,7,8,9,10
+Bleeding Heart	3,4,5,6,7,8,9
+Bletilla	7,8,9
+Bluestar Flower	3,4,5,6,7,8,9
+Bluebonnets	8
+Blue-eyed Grass	2,3,4,5,6,7,8,9
+Borage	3,4,5,6,7,8,9,10
+Bottlebrush	8,9,10,11
+Bouvardia	8,9,10,11
+Brachyscome	9,10,11
+Brassica	6,7,8,9
+Broom	8,9,10
+Buttercup	8,9,10,11
+Butterfly Bush	5,6,7,8,9
+Calceolaria	10,11
+Calendula	9,10,11
+Poppy	4
+Camellia	7,8,9,10
+Candytuft	3,4,5,6,7,8,9
+Cape Leadwort	8,9,10,11
+Primrose	4,5,6,7,8
+Cardinal Flower	3,4,5,6,7,8,9
+Carnation	5,6,7,8,9
+Catharanthus	10,11
+Catmint	3,4,5,6,7,8
+Celosia	10,11
+Cerastium Tomentosum	3,4,5,6,7
+Chicory	3,4,5,6,7,8,9,10
+Chionodoxa	4,5,6,7,8,9
+Chrysanthemum	5,6,7,8,9
+Clarkia	2,3,4,5,6,7,8,9,10
+Clematis	4,5,6,7,8,9
+Clover	3,4,5,6,7,8,9,10
+Columbine	3,4,5,6,7,8,9
+Coneflower	5,6,7,8
+Coral Bells	4,5,6,7,8,9
+Coral Vine	9,10,11
+Cornflower	2,3,4,5,6,7,8,9,10,11
+Corydalis	5,6,7,8,9
+Cosmos	2,3,4,5,6,7,8,9,10,11,12
+Cotoneaster	5,6,7,8
+Crocosmia	6,7,8,9
+Crocus	3,4,5,6,7,8
+Crown Imperial	5,6,7,8,9
+Cuckoo Flower	5,6,7,8
+Cyclamen	6
+Dahlia	8,9,10
+Dandelion	8,9,10
+Daphne	4,5,6,7,8,9
+Daylily	4,5,6,7,8,9,10,11
+Decumaria	6,7,8
+Delphinium	3,4,5,6,7
+Desert Rose	10,11
+Deutzia	5,6,7,8
+Dianella	9,10,11
+Dianthus Barbatus	3,4,5,6,7,8,9
+Diascia	8,9,10,11
+Dietes	9,10,11
+Dill	9,10,11
+Dutch Iris	6,7,8,9
 
