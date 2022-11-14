@@ -1,30 +1,35 @@
 package com.example.projecttesting;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class ZoneNameController {
+public class ZoneNameController implements Initializable {
 
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private TextField filterField;
-    private TableView<Plant> tableView;
-    private TableColumn<Plant, String> plantName;
-    private TableColumn<Plant, String> zone;
-    private TableColumn<Plant, String> height;
-    private TableColumn<Plant, String> width;
-    private TableColumn<Plant, String> sunlight;
+    private Label label;
+    @FXML private TextField filterField;
+    @FXML private TableView<Plant> tableView;
+    @FXML private TableColumn<Plant, String> plantName;
 
 
     public void back(ActionEvent e) throws IOException {
@@ -35,6 +40,25 @@ public class ZoneNameController {
         stage.show();
         System.out.println("You have gone back");
     }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        //Sets up Columns
+        plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
+
+        tableView.setItems(getPlant());
+    }
+
+   /* public ObservableList<Plant> getPlant(){
+        ObservableList<Plant> plant = FXCollections.observableArrayList();
+        plant.add(new Plant("Rose"));
+        return plant;
+    }*/
+
+
+
+
+
 
 
 
