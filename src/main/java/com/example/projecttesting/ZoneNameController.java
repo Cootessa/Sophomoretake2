@@ -31,6 +31,15 @@ public class ZoneNameController implements Initializable {
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
 
+    //Search text field
+    public void search(ActionEvent e) throws IOException{
+        String inputSearch = filterField.getText();
+
+    }
+    //Search button
+    public void buttonSearch(ActionEvent e) throws IOException{
+
+    }
 
     public void back(ActionEvent e) throws IOException {
         root = FXMLLoader.load(getClass().getResource("ZonePick.fxml"));
