@@ -20,27 +20,27 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ZoneNameController implements Initializable {
+public class ZoneNineController implements Initializable {
 
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
     private Label label;
+    private Label invalid;
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
 
-    //Search text field
-    public void search(ActionEvent e) throws IOException{
+
+    //Search button
+    public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
 
     }
-    //Search button
-    public void buttonSearch(ActionEvent e) throws IOException{
 
-    }
 
+    //Back Button Controller
     public void back(ActionEvent e) throws IOException {
         root = FXMLLoader.load(getClass().getResource("ZonePick.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -50,30 +50,19 @@ public class ZoneNameController implements Initializable {
         System.out.println("You have gone back");
     }
 
-    //ObservableList<Plant> dataList = FXCollections.observableArrayList();
 
+    //Initializes Columns
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //Sets up Columns
         plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
         tableView.setItems(getPlant());
 
-        /*Plant plant1 = new Plant ("Rose");
-
-        dataList.addAll(plant1); */
     }
-
-   public ObservableList<Plant> getPlant(){
+    //Add to Table
+    public ObservableList<Plant> getPlant(){
         ObservableList<Plant> plant = FXCollections.observableArrayList();
-        plant.add(new Plant("Rose"));
+        plant.add(new Plant("Okay"));
         return plant;
     }
-
-
-
-
-
-
-
-
 }

@@ -25,7 +25,7 @@ public class ZoneController {
     Button zone2;
 
     public void zone2(ActionEvent e) throws IOException {
-       root = FXMLLoader.load(getClass().getResource("ZoneNameScreen.fxml"));
+       root = FXMLLoader.load(getClass().getResource("ZoneTwoScreen.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -34,37 +34,96 @@ public class ZoneController {
     }
 
 
-    public void zone3(ActionEvent e){
+    public void zone3(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneThreeScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 3");
 
     }
 
-    public void zone4(ActionEvent e){
+    public void zone4(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneFourScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 4");
+
     }
 
-    public void zone5(ActionEvent e){
+    public void zone5(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneFiveScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 5");
     }
 
-    public void zone6(ActionEvent e){
+    public void zone6(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneSixScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 6");
     }
 
-    public void zone7(ActionEvent e){
+    public void zone7(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneSevenScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 7");
     }
 
-    public void zone8(ActionEvent e){
+    public void zone8(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneEightScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 8");
     }
 
-    public void zone9(ActionEvent e){
+    public void zone9(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneNineScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 9");
     }
 
-    public void zone10(ActionEvent e){
+    public void zone10(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneTenScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
         System.out.println("You have picked Zone 10");
+    }
+
+    public void zone11(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("ZoneElevenScreen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("You have picked Zone 11");
+    }
+
+    public void zone12(ActionEvent e) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("Zone12Screen.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("You have picked Zone 12");
     }
 
     public void exit(ActionEvent e){
