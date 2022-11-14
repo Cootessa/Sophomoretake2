@@ -41,19 +41,24 @@ public class ZoneNameController implements Initializable {
         System.out.println("You have gone back");
     }
 
+    //ObservableList<Plant> dataList = FXCollections.observableArrayList();
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //Sets up Columns
         plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
-
         tableView.setItems(getPlant());
+
+        /*Plant plant1 = new Plant ("Rose");
+
+        dataList.addAll(plant1); */
     }
 
-   /* public ObservableList<Plant> getPlant(){
+   public ObservableList<Plant> getPlant(){
         ObservableList<Plant> plant = FXCollections.observableArrayList();
         plant.add(new Plant("Rose"));
         return plant;
-    }*/
+    }
 
 
 

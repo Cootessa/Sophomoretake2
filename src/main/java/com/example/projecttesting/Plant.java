@@ -3,17 +3,18 @@ package com.example.projecttesting;
 
 import javafx.beans.property.SimpleStringProperty;
 
-public class Plant {
+public class Plant{
     private SimpleStringProperty plantName;
 
-    public Plant(String plantName) {
-        this.plantName = new SimpleStringProperty(plantName);
+    Plant(String plant){
+        this.plantName = new SimpleStringProperty(plant);
     }
 
     public String getPlantName(){
         return plantName.get();
     }
-    public void setPlantName(String plantName) {
-        setPlantName(plantName);
+
+    public void setPlantName(SimpleStringProperty plant){
+        this.plantName = plant;
     }
 }

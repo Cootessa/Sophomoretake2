@@ -18,9 +18,9 @@
       <Button layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
       <TextField layoutX="75.0" layoutY="281.0" prefHeight="25.0" prefWidth="352.0" />
       <Button layoutX="444.0" layoutY="281.0" mnemonicParsing="false" text="Search" />
-      <TableView layoutX="75.0" layoutY="316.0" prefHeight="339.0" prefWidth="398.0">
+      <TableView fx:id="tableView" layoutX="75.0" layoutY="316.0" prefHeight="339.0" prefWidth="398.0">
         <columns>
-          <TableColumn fx:id="flowerName" prefWidth="397.0" text="Flower Name" />
+          <TableColumn fx:id="plantName" prefWidth="397.0" text="Flower Name" />
         </columns>
       </TableView>
       <ScrollBar layoutX="473.0" layoutY="316.0" orientation="VERTICAL" prefHeight="339.0" prefWidth="14.0" />
