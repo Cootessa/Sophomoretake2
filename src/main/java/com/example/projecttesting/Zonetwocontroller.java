@@ -36,7 +36,18 @@ public class Zonetwocontroller implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException{
         String inputSearch = filterField.getText();
-
+        if (inputSearch.equals("Rose")){
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
+            root = loader.load();
+            TestPlantPage testPlantPage = loader.getController();
+            testPlantPage.displayNames("Rose", "1.2", "2.3", "full");
+        }
+        if (inputSearch.equals("Tulip")){
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
+            root = loader.load();
+            TestPlantPage testPlantPage = loader.getController();
+            testPlantPage.displayNames("Tulip", "3.2", "5.2", "semi");
+        }
     }
 
 
