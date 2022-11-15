@@ -31,7 +31,7 @@ public class TestPlantPage {
     }
 
     public void back(ActionEvent e) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Zonetwocontroller.fxml"));
+        root = FXMLLoader.load(getClass().getResource("ZoneTwoScreen.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

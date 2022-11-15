@@ -40,13 +40,21 @@ public class Zonetwocontroller implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
             root = loader.load();
             TestPlantPage testPlantPage = loader.getController();
-            testPlantPage.displayNames("Rose", "1.2", "2.3", "full");
+            testPlantPage.displayNames("Rose", "1.2", "2.3", "Full");
+            stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
         }
         if (inputSearch.equals("Tulip")){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
             root = loader.load();
             TestPlantPage testPlantPage = loader.getController();
             testPlantPage.displayNames("Tulip", "3.2", "5.2", "semi");
+            stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
         }
     }
 
