@@ -36,26 +36,29 @@ public class Zonetwocontroller implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException{
         String inputSearch = filterField.getText();
-        if (inputSearch.equals("Rose")){
+        if (inputSearch.equals("Marigold")){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
             root = loader.load();
             TestPlantPage testPlantPage = loader.getController();
-            testPlantPage.displayNames("Rose", "1.2", "2.3", "Full");
+            testPlantPage.displayNames("Marigold", "6'-12'", "6'-9'", "Full");
+            testPlantPage.displayPicture();
             stage = (Stage)((Node)e.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         }
-        if (inputSearch.equals("Tulip")){
+        if (inputSearch.equals("Begonia")){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
             root = loader.load();
             TestPlantPage testPlantPage = loader.getController();
-            testPlantPage.displayNames("Tulip", "3.2", "5.2", "semi");
+            testPlantPage.displayNames("Begonia", "11\"", "4\"", "Partial");
+            testPlantPage.displayPicture();
             stage = (Stage)((Node)e.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         }
+
     }
 
 
@@ -81,7 +84,8 @@ public class Zonetwocontroller implements Initializable {
     //Add to Table
    public ObservableList<Plant> getPlant(){
         ObservableList<Plant> plant = FXCollections.observableArrayList();
-        plant.add(new Plant("Rose"));
+        plant.add(new Plant("Marigold"));
+        plant.add(new Plant("Begonia"));
         return plant;
     }
 
