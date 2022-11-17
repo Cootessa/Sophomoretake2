@@ -47,9 +47,7 @@ public class Zonetwocontroller implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
         root = loader.load();
         TestPlantPage testPlantPage = loader.getController();
-        if (inputSearch.equalsIgnoreCase("Marigold")) {
-            testPlantPage.displayPicture(marigoldImage);
-        } else if (inputSearch.equalsIgnoreCase("Begonia")) {
+         if (inputSearch.equalsIgnoreCase("Begonia")) {
             testPlantPage.displayPicture(begoniaImage);
 
         } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
@@ -65,13 +63,10 @@ public class Zonetwocontroller implements Initializable {
             testPlantPage.displayPicture(begoniaImage); //need to change image
 
         }
-        else if (((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Invalid entry");
-            alert.setHeaderText("You entered a plant that does not exist in this zone");
-            alert.setContentText("Please enter a valid plant name");
-            alert.showAndWait();
-        }
+        else if (inputSearch.equalsIgnoreCase("Marigold")) {
+            testPlantPage.displayPicture(marigoldImage);
+            }
+
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -124,7 +119,7 @@ public class Zonetwocontroller implements Initializable {
 
     //Add to Table
    public ObservableList<Plant> getPlant(){
-        plant.addAll(new Plant("Begonia"), new Plant("Blue-eyed Grass"), new Plant("Clarkia"), new Plant(" Cornflower"), new Plant("Cosmos"), new Plant("Marigold"));
+        plant.addAll(new Plant("Begonia"), new Plant("Blue-eyed Grass"), new Plant("Clarkia"), new Plant("Cornflower"), new Plant("Cosmos"), new Plant("Marigold"));
         return plant;
     }
 
