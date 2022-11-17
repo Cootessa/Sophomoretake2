@@ -12,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class TestPlantPage {
 
@@ -24,28 +25,15 @@ public class TestPlantPage {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    ImageView flowerPic;
+    @FXML ImageView flowerPic;
 
-    Image marigoldImage = new Image(getClass().getResourceAsStream("Marigold.jpg"));
-    Image begoniaImage = new Image(getClass().getResourceAsStream("Begonia.jpg"));
 
-    public void displayNames(String name, String height, String width, String sun){
-        plantTitle.setText(name);
-        plantHeight.setText("Height: " + height);
-        plantWidth.setText("Width: " + width);
-        plantSun.setText("Sunlight: " + sun);
+
+    public void displayPicture(Image flower) {
+        flowerPic.setImage(flower);
     }
 
-    public void displayPicture() {
-        if () {
-            flowerPic.setImage(marigoldImage);
-        }
-        if (plantTitle.equals("Begonia")){
-            flowerPic.setImage(begoniaImage);
-        }
-    }
 
-    
 
     public void back(ActionEvent e) throws IOException {
         root = FXMLLoader.load(getClass().getResource("ZoneTwoScreen.fxml"));

@@ -14,10 +14,12 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class Zonetwocontroller implements Initializable {
@@ -32,27 +34,27 @@ public class Zonetwocontroller implements Initializable {
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
 
+    Image marigoldImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marigold.jpg")));
+    Image begoniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Begonia.jpg")));
 
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException{
         String inputSearch = filterField.getText();
-        if (inputSearch.equals("Marigold")){
+        if (inputSearch.equalsIgnoreCase("Marigold")){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
             root = loader.load();
             TestPlantPage testPlantPage = loader.getController();
-            testPlantPage.displayNames("Marigold", "6'-12'", "6'-9'", "Full");
-            testPlantPage.displayPicture();
+            testPlantPage.displayPicture(marigoldImage);
             stage = (Stage)((Node)e.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         }
-        if (inputSearch.equals("Begonia")){
+        if (inputSearch.equalsIgnoreCase("Begonia")){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
             root = loader.load();
             TestPlantPage testPlantPage = loader.getController();
-            testPlantPage.displayNames("Begonia", "11\"", "4\"", "Partial");
-            testPlantPage.displayPicture();
+            testPlantPage.displayPicture(begoniaImage);
             stage = (Stage)((Node)e.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
