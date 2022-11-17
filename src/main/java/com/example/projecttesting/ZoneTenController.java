@@ -31,7 +31,7 @@ public class ZoneTenController implements Initializable {
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
-
+    private ObservableList<Plant> plant = FXCollections.observableArrayList();
 
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
@@ -61,7 +61,6 @@ public class ZoneTenController implements Initializable {
     }
     //Add to Table
     public ObservableList<Plant> getPlant(){
-        ObservableList<Plant> plant = FXCollections.observableArrayList();
         plant.add(new Plant("Sweet"));
         return plant;
     }

@@ -2,6 +2,8 @@ package com.example.projecttesting;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,7 +33,7 @@ public class ZoneNineController implements Initializable {
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
-
+    private ObservableList<Plant> plant = FXCollections.observableArrayList();
 
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
@@ -58,10 +60,31 @@ public class ZoneNineController implements Initializable {
         plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
         tableView.setItems(getPlant());
 
+        //Below is what makes the table searchable
+        //Filtered List
+        FilteredList<Plant> plantFilteredList = new FilteredList<>(plant, b -> true);
+        filterField.textProperty().addListener((observable, oldValue, newValue) -> {
+            plantFilteredList.setPredicate(plant -> {
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                String lowerCaseFilter = newValue.toLowerCase();
+                if (plant.getPlantName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+
+            });
+        });
+        //Sorted List
+        SortedList<Plant> sortedList = new SortedList<>(plantFilteredList);
+        sortedList.comparatorProperty().bind(tableView.comparatorProperty());
+        tableView.setItems(sortedList);
+
     }
     //Add to Table
     public ObservableList<Plant> getPlant(){
-        ObservableList<Plant> plant = FXCollections.observableArrayList();
         plant.add(new Plant("Okay"));
         return plant;
     }

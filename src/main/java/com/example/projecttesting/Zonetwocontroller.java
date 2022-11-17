@@ -34,6 +34,7 @@ public class Zonetwocontroller implements Initializable {
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
 
+
     Image marigoldImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marigold.jpg")));
     Image begoniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Begonia.jpg")));
 
