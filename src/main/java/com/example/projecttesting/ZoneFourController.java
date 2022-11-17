@@ -62,7 +62,17 @@ public class ZoneFourController implements Initializable {
     //Add to Table
     public ObservableList<Plant> getPlant(){
         ObservableList<Plant> plant = FXCollections.observableArrayList();
-        plant.add(new Plant("Fish"));
+        plant.addAll(new Plant("Aconite"), new Plant("Alchemilla"), new Plant("Allium"), new Plant("Anise Hyssop"), new Plant("Armeria Maritima"),
+                new Plant("Aster"), new Plant("Baby's Breath"), new Plant("Bachelor's Button"), new Plant("Balloon Flower"),
+                new Plant("Bee Balm"), new Plant("Begonia"), new Plant("Bellflower"), new Plant("Bergamot"), new Plant("Bergenia"),
+                new Plant("Black-eyed Susan"), new Plant("Blanket Flower"), new Plant("Blazing Star"), new Plant("Bleeding Heart"),
+                new Plant("Bluestar Flower"), new Plant("Blue-eyed Grass"), new Plant("Borage"), new Plant("Candytuft"),
+                new Plant("Cardinal Flower"), new Plant("Catmint"), new Plant("Cerastium Tomentosum"), new Plant("Chicory"),
+                new Plant("Chiondoxa"), new Plant("Clarkia"), new Plant("Clematis"), new Plant("Clover"), new Plant("Columbine"),
+                new Plant("Coral Bells"), new Plant("Coreopsis"), new Plant("Cornflower"), new Plant("Cosmos"), new Plant("Crocus"),
+                new Plant("Daffodil"), new Plant("Daisy"), new Plant("Daphne"), new Plant("Daylily"), new Plant("Delphinium"), new Plant("Dianthus Barbatus"),
+                new Plant("Geranium"), new Plant("Hollyhock"), new Plant("Lilac"), new Plant("Lily"), new Plant("Marigold"),
+                new Plant("Morning Glory"), new Plant("Primrose"), new Plant("Poppy"), new Plant("Tulip"));
         return plant;
     }
 

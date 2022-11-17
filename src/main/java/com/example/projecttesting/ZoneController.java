@@ -21,8 +21,6 @@ public class ZoneController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private String zone;
-    Button zone2;
 
     public void zone2(ActionEvent e) throws IOException {
        root = FXMLLoader.load(getClass().getResource("ZoneTwoScreen.fxml"));
@@ -108,23 +106,7 @@ public class ZoneController {
         System.out.println("You have picked Zone 10");
     }
 
-    public void zone11(ActionEvent e) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("ZoneElevenScreen.fxml"));
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-        System.out.println("You have picked Zone 11");
-    }
 
-    public void zone12(ActionEvent e) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("Zone12Screen.fxml"));
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-        System.out.println("You have picked Zone 12");
-    }
 
     public void exit(ActionEvent e){
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);

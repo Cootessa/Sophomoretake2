@@ -17,10 +17,6 @@ import java.util.Objects;
 public class TestPlantPage {
 
 
-    @FXML Label plantTitle;
-    @FXML Label plantHeight;
-    @FXML Label plantWidth;
-    @FXML Label plantSun;
     @FXML
     private Stage stage;
     private Scene scene;

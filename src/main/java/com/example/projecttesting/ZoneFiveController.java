@@ -62,7 +62,18 @@ public class ZoneFiveController implements Initializable {
     //Add to Table
     public ObservableList<Plant> getPlant(){
         ObservableList<Plant> plant = FXCollections.observableArrayList();
-        plant.add(new Plant("Ahhhh"));
+        plant.addAll(new Plant("Aconite"), new Plant("Alchemilla"), new Plant("Allium"), new Plant("Alyssum"),
+                new Plant("Anise Hyssop"), new Plant("Armeria Maritima"), new Plant("Aster"), new Plant("Baby's Breath"), new Plant("Bachelor's Button"), new Plant("Balloon Flower"),
+                new Plant("Bee Balm"), new Plant("Begonia"),  new Plant("Bergamot"), new Plant("Bergenia"),
+                new Plant("Black-eyed Susan"), new Plant("Blanket Flower"), new Plant("Blazing Star"), new Plant("Bleeding Heart"),
+                new Plant("Bluestar Flower"), new Plant("Blue-eyed Grass"), new Plant("Borage"), new Plant("Butterfly Bush"),
+                new Plant("Candytuft"), new Plant("Cardinal Flower"), new Plant("Carnation"), new Plant("Catmint"), new Plant("Cerastium Tomentosum"), new Plant("Chicory"),
+                new Plant("Chiondoxa"), new Plant("Chrysanthemum"), new Plant("Clarkia"), new Plant("Clematis"), new Plant("Clover"), new Plant("Columbine"),
+                new Plant("Coneflower"), new Plant("Coral Bells"), new Plant("Coreopsis"), new Plant("Cornflower"), new Plant("Corydalis"),
+                new Plant("Cosmos"), new Plant("Cotoneaster"), new Plant("Crocus"), new Plant("Crown Imperial"), new Plant("Cuckoo Flower"),
+                new Plant("Daffodil"), new Plant("Daisy"), new Plant("Daphne"), new Plant("Daylily"), new Plant("Delphinium"), new Plant("Deutzia"),
+                new Plant("Dianthus Barbatus"), new Plant("Geramium"), new Plant("Hollyhock"), new Plant("Lavender"),
+                new Plant("Lilac"), new Plant("Lily"), new Plant("Marigold"), new Plant("Morning Glory"), new Plant("Rose"), new Plant("Tulip"), new Plant("Wisteria"));
         return plant;
     }
 }

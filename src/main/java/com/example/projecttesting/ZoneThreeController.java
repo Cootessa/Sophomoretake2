@@ -34,7 +34,26 @@ public class ZoneThreeController implements Initializable {
     //Search text field
     public void search(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-
+        if (inputSearch.equalsIgnoreCase("Alchemilla")){
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
+            root = loader.load();
+            TestPlantPage testPlantPage = loader.getController();
+            //testPlantPage.displayPicture();
+            stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+        else if (inputSearch.equalsIgnoreCase("")){
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
+            root = loader.load();
+            TestPlantPage testPlantPage = loader.getController();
+            //testPlantPage.displayPicture();
+            stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
     }
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException{
@@ -62,7 +81,14 @@ public class ZoneThreeController implements Initializable {
     //Add to Table
     public ObservableList<Plant> getPlant(){
         ObservableList<Plant> plant = FXCollections.observableArrayList();
-        plant.add(new Plant("Tulip"));
+        plant.addAll(new Plant("Alchemilla"), new Plant("Allium"), new Plant("Anemone"), new Plant("Aster"),
+        new Plant("Bachelor's Button"), new Plant("Balloon Flower"), new Plant("Bee Balm"), new Plant("Begonia"),
+        new Plant("Bergamot"),new Plant("Bergenia"), new Plant("Black-eyed Susan"), new Plant("Blanket Flower"), new Plant("Blazing Star"),
+        new Plant("Bleeding Heart"), new Plant("Bluestar Flower"), new Plant("Blue-eyed Grass"), new Plant("Borage"), new Plant("Candytuft"),
+        new Plant("Cardinal Flower"), new Plant("Catmint"), new Plant("Cerastium Tomentosum"), new Plant("Chicory"), new Plant("Clarkia"),
+        new Plant("Clover"), new Plant("Columbine"), new Plant("Cornflower"), new Plant("Cosmos"), new Plant("Crocus"), new Plant("Daffodil"),
+                new Plant("Delphinium"), new Plant("Dianthus Barbatus"), new Plant("Geranium"), new Plant("Hollyhock"),
+                new Plant("Lilac"), new Plant("Lily"), new Plant("Marigold"), new Plant("Morning Glory"), new Plant("Tulip"));
         return plant;
     }
 }

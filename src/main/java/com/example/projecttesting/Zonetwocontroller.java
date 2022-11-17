@@ -2,6 +2,8 @@ package com.example.projecttesting;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,16 +11,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
@@ -37,31 +37,46 @@ public class Zonetwocontroller implements Initializable {
     Image marigoldImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marigold.jpg")));
     Image begoniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Begonia.jpg")));
 
-    //Search button
-    public void buttonSearch(ActionEvent e) throws IOException{
-        String inputSearch = filterField.getText();
-        if (inputSearch.equalsIgnoreCase("Marigold")){
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
-            root = loader.load();
-            TestPlantPage testPlantPage = loader.getController();
-            testPlantPage.displayPicture(marigoldImage);
-            stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
-        if (inputSearch.equalsIgnoreCase("Begonia")){
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
-            root = loader.load();
-            TestPlantPage testPlantPage = loader.getController();
-            testPlantPage.displayPicture(begoniaImage);
-            stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
 
+    private ObservableList<Plant> plant = FXCollections.observableArrayList();
+
+    //Search button
+    public void buttonSearch(ActionEvent e) throws IOException {
+        String inputSearch = filterField.getText();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
+        root = loader.load();
+        TestPlantPage testPlantPage = loader.getController();
+        if (inputSearch.equalsIgnoreCase("Marigold")) {
+            testPlantPage.displayPicture(marigoldImage);
+        } else if (inputSearch.equalsIgnoreCase("Begonia")) {
+            testPlantPage.displayPicture(begoniaImage);
+
+        } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
+            testPlantPage.displayPicture(begoniaImage); //need to change picture
+
+        } else if (inputSearch.equalsIgnoreCase("Clarkia")) {
+            testPlantPage.displayPicture(begoniaImage); //need to change picture
+
+        } else if (inputSearch.equalsIgnoreCase("Cornflower")) {
+            testPlantPage.displayPicture(begoniaImage); //need to change image
+
+        } else if (inputSearch.equalsIgnoreCase("Cosmos")) {
+            testPlantPage.displayPicture(begoniaImage); //need to change image
+
+        }
+        else if (((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid entry");
+            alert.setHeaderText("You entered a plant that does not exist in this zone");
+            alert.setContentText("Please enter a valid plant name");
+            alert.showAndWait();
+        }
+        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
+
 
 
     //Back Button Controller
@@ -82,13 +97,35 @@ public class Zonetwocontroller implements Initializable {
         plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
         tableView.setItems(getPlant());
 
+        //Below is what makes the table searchable
+            //Filtered List
+            FilteredList<Plant> plantFilteredList = new FilteredList<>(plant, b -> true);
+            filterField.textProperty().addListener((observable, oldValue, newValue) -> {
+                plantFilteredList.setPredicate(plant -> {
+                    if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                    }
+                    String lowerCaseFilter = newValue.toLowerCase();
+                    if (plant.getPlantName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+
+                });
+            });
+            //Sorted List
+            SortedList<Plant> sortedList = new SortedList<>(plantFilteredList);
+            sortedList.comparatorProperty().bind(tableView.comparatorProperty());
+            tableView.setItems(sortedList);
     }
+
+
     //Add to Table
    public ObservableList<Plant> getPlant(){
-        ObservableList<Plant> plant = FXCollections.observableArrayList();
-        plant.add(new Plant("Marigold"));
-        plant.add(new Plant("Begonia"));
+        plant.addAll(new Plant("Begonia"), new Plant("Blue-eyed Grass"), new Plant("Clarkia"), new Plant(" Cornflower"), new Plant("Cosmos"), new Plant("Marigold"));
         return plant;
     }
+
 
 }
