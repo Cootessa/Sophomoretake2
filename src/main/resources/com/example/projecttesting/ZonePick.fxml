@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecttesting.ZoneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecttesting.ZoneController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="584.0" layoutX="7.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/clous/IdeaProjects/Sophomoretake2/src/main/resources/com/example/projecttesting/Zonemap.jpg" />
+            <Image url="@Zonemap.jpg" />
          </image>
       </ImageView>
       <Label layoutX="88.0" layoutY="11.0" prefHeight="83.0" prefWidth="366.0" text="To select zone click corrosponding color button below" textAlignment="CENTER" wrapText="true">
