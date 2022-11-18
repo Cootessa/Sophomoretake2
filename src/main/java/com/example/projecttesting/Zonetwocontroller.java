@@ -66,7 +66,6 @@ public class Zonetwocontroller implements Initializable {
         else if (inputSearch.equalsIgnoreCase("Marigold")) {
             testPlantPage.displayPicture(marigoldImage);
             }
-
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

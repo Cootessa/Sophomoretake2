@@ -39,6 +39,112 @@ public class ZoneNineController implements Initializable {
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
 
+        if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("")) {
+            //testPlantPage.displayPicture();
+        }
+
     }
 
 
