@@ -38,9 +38,9 @@ public class ZoneEightController implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
         root = loader.load();
-        TestPlantPage testPlantPage = loader.getController();
+        PlantPage testPlantPage = loader.getController();
         if (inputSearch.equalsIgnoreCase("")) {
             //testPlantPage.displayPicture();
         }

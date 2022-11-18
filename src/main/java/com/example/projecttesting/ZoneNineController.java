@@ -38,7 +38,9 @@ public class ZoneNineController implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
+        root = loader.load();
+        PlantPage testPlantPage = loader.getController();
         if (inputSearch.equalsIgnoreCase("")) {
             //testPlantPage.displayPicture();
         }
@@ -144,7 +146,10 @@ public class ZoneNineController implements Initializable {
         else if (inputSearch.equalsIgnoreCase("")) {
             //testPlantPage.displayPicture();
         }
-
+        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 

@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
@@ -44,9 +43,9 @@ public class Zonetwocontroller implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
         root = loader.load();
-        TestPlantPage testPlantPage = loader.getController();
+        PlantPage testPlantPage = loader.getController();
          if (inputSearch.equalsIgnoreCase("Begonia")) {
             testPlantPage.displayPicture(begoniaImage);
 
