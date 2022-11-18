@@ -35,169 +35,6 @@ public class ZoneFiveController implements Initializable {
     @FXML private TableColumn<Plant, String> plantName;
     private ObservableList<Plant> plant = FXCollections.observableArrayList();
 
-    //Search button
-    public void buttonSearch(ActionEvent e) throws IOException {
-        String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
-        root = loader.load();
-        TestPlantPage testPlantPage = loader.getController();
-        if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
-        }
-        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-
-    }
-
 
     //Back Button Controller
     public void back(ActionEvent e) throws IOException {
@@ -255,5 +92,201 @@ public class ZoneFiveController implements Initializable {
                 new Plant("Dianthus Barbatus"), new Plant("Geramium"), new Plant("Hollyhock"), new Plant("Lavender"),
                 new Plant("Lilac"), new Plant("Lily"), new Plant("Marigold"), new Plant("Morning Glory"), new Plant("Rose"), new Plant("Tulip"), new Plant("Wisteria"));
         return plant;
+    }
+
+    //Search button
+    public void buttonSearch(ActionEvent e) throws IOException {
+        String inputSearch = filterField.getText();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("TestPlantPage.fxml"));
+        root = loader.load();
+        TestPlantPage testPlantPage = loader.getController();
+        if (inputSearch.equalsIgnoreCase("Aconite")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Alchemilla")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Allium")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Alyssum")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Anise Hyssop")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Armeria Maritima")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Aster")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Baby's Breath")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Bachelor's Button")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Balloon Flower")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Bee Balm")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Begonia")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Bergamot")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Bergenia")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Black-eyed Susan")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Blanket Flower")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Blazing Star")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Bleeding Heart")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Bluestar Flower")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Borage")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Butterfly Bush")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Candytuft")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Cardinal Flower")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Carnation")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Catmint")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Cerastium Tomentosum")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Chicory")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Chiondoxa")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Chrysanthemum")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Clarkia")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Clematis")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Clover")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Columbine")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Coneflower")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Coral Bells")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Coreopsis")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Cornflower")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Corydalis")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Cosmos")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Cotoneaster")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Crocus")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Crown Imperial")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Cuckoo Flower")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Daffodil")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Daisy")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Daphne")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Daylily")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Delphinium")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Deutzia")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Dianthus Barbatus")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Geranium")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Hollyhock")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Lavender")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Lilac")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Lily")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Marigold")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Morning Glory")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Rose")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Tulip")) {
+            //testPlantPage.displayPicture();
+        }
+        else if (inputSearch.equalsIgnoreCase("Wisteria")) {
+            //testPlantPage.displayPicture();
+        }
+        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
     }
 }
