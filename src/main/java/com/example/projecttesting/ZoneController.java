@@ -29,6 +29,8 @@ public class ZoneController {
         stage.setScene(scene);
         stage.show();
         System.out.println("You have picked Zone 2");
+
+
     }
 
 
