@@ -38,131 +38,131 @@ public class ZoneEightController implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPageZone8.fxml"));
         root = loader.load();
-        PlantPage testPlantPage = loader.getController();
+        PlantPageZone8 plantPage = loader.getController();
         if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);

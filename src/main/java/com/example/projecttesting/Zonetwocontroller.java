@@ -48,24 +48,24 @@ public class Zonetwocontroller implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPageZone2.fxml"));
         root = loader.load();
-        PlantPage testPlantPage = loader.getController();
+        PlantPage plantPage = loader.getController();
          if (inputSearch.equalsIgnoreCase("Begonia")) {
-            testPlantPage.displayPicture(begoniaImage);
+            plantPage.displayPicture(begoniaImage);
          } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
-            testPlantPage.displayPicture(bluegrassImage);
+            plantPage.displayPicture(bluegrassImage);
          }
          else if (inputSearch.equalsIgnoreCase("Clarkia")) {
-            testPlantPage.displayPicture(clarkiaImage);
+            plantPage.displayPicture(clarkiaImage);
          } else if (inputSearch.equalsIgnoreCase("Cornflower")) {
-            testPlantPage.displayPicture(cornflowerImage);
+            plantPage.displayPicture(cornflowerImage);
          }
          else if (inputSearch.equalsIgnoreCase("Cosmos")) {
-            testPlantPage.displayPicture(cosmosImage);
+            plantPage.displayPicture(cosmosImage);
          }
         else if (inputSearch.equalsIgnoreCase("Marigold")) {
-            testPlantPage.displayPicture(marigoldImage);
+            plantPage.displayPicture(marigoldImage);
             }
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);

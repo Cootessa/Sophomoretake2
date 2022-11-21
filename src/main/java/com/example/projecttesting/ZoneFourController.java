@@ -134,7 +134,7 @@ public class ZoneFourController implements Initializable {
     Image cosmosImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cosmos.jpg")));
     Image crocusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Crocus.jpg")));
     Image daffodilImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daffodil.jpg")));
-    Image daisyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daisy.jpg")));
+    Image daisyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daisy.jpeg")));
     Image daphneImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daphne.jpg")));
     Image daylilyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daylily.jpg")));
     Image delphiniumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Delphinium.jpg")));
@@ -154,161 +154,161 @@ public class ZoneFourController implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException{
         String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPageZone4.fxml"));
         root = loader.load();
-        PlantPage testPlantPage = loader.getController();
+        PlantPageZone4 plantPage = loader.getController();
         if (inputSearch.equalsIgnoreCase("Aconite")) {
-            testPlantPage.displayPicture(aconiteImage);
+            plantPage.displayPicture(aconiteImage);
         }
         else if (inputSearch.equalsIgnoreCase("Alchemilla")) {
-            testPlantPage.displayPicture(alchemillaImage);
+            plantPage.displayPicture(alchemillaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Allium")) {
-            testPlantPage.displayPicture(alliumImage);
+            plantPage.displayPicture(alliumImage);
         }
         else if (inputSearch.equalsIgnoreCase("Anise Hyssop")) {
-            testPlantPage.displayPicture(aniseImage);
+            plantPage.displayPicture(aniseImage);
         }
         else if (inputSearch.equalsIgnoreCase("Armeria Maritima")) {
-            testPlantPage.displayPicture(armeriaImage);
+            plantPage.displayPicture(armeriaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Aster")) {
-            testPlantPage.displayPicture(asterImage);
+            plantPage.displayPicture(asterImage);
         }
         else if (inputSearch.equalsIgnoreCase("Baby's Breath")) {
-            testPlantPage.displayPicture(breathImage);
+            plantPage.displayPicture(breathImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bachelor's Button")) {
-            testPlantPage.displayPicture(bachelorImage);
+            plantPage.displayPicture(bachelorImage);
         }
         else if (inputSearch.equalsIgnoreCase("Balloon Flower")) {
-            testPlantPage.displayPicture(balloonImage);
+            plantPage.displayPicture(balloonImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bee Balm")) {
-            testPlantPage.displayPicture(beeImage);
+            plantPage.displayPicture(beeImage);
         }
-        else if (inputSearch.equalsIgnoreCase("Begonia")) {
-            testPlantPage.displayPicture(begoniaImage);
+       else if (inputSearch.equalsIgnoreCase("Begonia")) {
+            plantPage.displayPicture(begoniaImage);
         }
         else if(inputSearch.equalsIgnoreCase("Bellflower")){
-            testPlantPage.displayPicture(bellflowerImage);
+            plantPage.displayPicture(bellflowerImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bergamot")) {
-            testPlantPage.displayPicture(bergamotImage);
+            plantPage.displayPicture(bergamotImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bergenia")) {
-            testPlantPage.displayPicture(bergeniaImage);
+            plantPage.displayPicture(bergeniaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Black-eyed Susan")) {
-            testPlantPage.displayPicture(susanImage);
+            plantPage.displayPicture(susanImage);
         }
         else if (inputSearch.equalsIgnoreCase("Blanket Flower")) {
-            testPlantPage.displayPicture(blanketImage);
+            plantPage.displayPicture(blanketImage);
         }
         else if (inputSearch.equalsIgnoreCase("Blazing Star")) {
-            testPlantPage.displayPicture(blazingImage);
+            plantPage.displayPicture(blazingImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bleeding Heart")) {
-            testPlantPage.displayPicture(bleedingImage);
+            plantPage.displayPicture(bleedingImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bluestar Flower")) {
-            testPlantPage.displayPicture(bluestarImage);
+            plantPage.displayPicture(bluestarImage);
         }
         else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
-            testPlantPage.displayPicture(bluegrassImage);
+            plantPage.displayPicture(bluegrassImage);
         }
         else if (inputSearch.equalsIgnoreCase("Borage")) {
-            testPlantPage.displayPicture(borageImage);
+            plantPage.displayPicture(borageImage);
         }
         else if (inputSearch.equalsIgnoreCase("Candytuft")) {
-            testPlantPage.displayPicture(candytuftImage);
+            plantPage.displayPicture(candytuftImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cardinal Flower")) {
-            testPlantPage.displayPicture(cardinalImage);
+            plantPage.displayPicture(cardinalImage);
         }
         else if (inputSearch.equalsIgnoreCase("Catmint")) {
-            testPlantPage.displayPicture(catmintImage);
+            plantPage.displayPicture(catmintImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cerastium Tomentosum")) {
-            testPlantPage.displayPicture(cerastiumImage);
+            plantPage.displayPicture(cerastiumImage);
         }
         else if (inputSearch.equalsIgnoreCase("Chicory")) {
-            testPlantPage.displayPicture(chicoryImage);
+            plantPage.displayPicture(chicoryImage);
         }
         else if (inputSearch.equalsIgnoreCase("Chionodoxa")) {
-            testPlantPage.displayPicture(chionodoxaImage);
+            plantPage.displayPicture(chionodoxaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Clarkia")) {
-            testPlantPage.displayPicture(clarkiaImage);
+            plantPage.displayPicture(clarkiaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Clematis")) {
-            testPlantPage.displayPicture(clematisImage);
+            plantPage.displayPicture(clematisImage);
         }
         else if (inputSearch.equalsIgnoreCase("Clover")) {
-            testPlantPage.displayPicture(cloverImage);
+            plantPage.displayPicture(cloverImage);
         }
         else if (inputSearch.equalsIgnoreCase("Columbine")) {
-            testPlantPage.displayPicture(columbineImage);
+            plantPage.displayPicture(columbineImage);
         }
         else if (inputSearch.equalsIgnoreCase("Coral Bells")) {
-            testPlantPage.displayPicture(coralImage);
+            plantPage.displayPicture(coralImage);
         }
         else if (inputSearch.equalsIgnoreCase("Coreopsis")) {
-            testPlantPage.displayPicture(coreopsisImage);
+            plantPage.displayPicture(coreopsisImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cornflower")) {
-            testPlantPage.displayPicture(cornflowerImage);
+            plantPage.displayPicture(cornflowerImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cosmos")) {
-            testPlantPage.displayPicture(cosmosImage);
+            plantPage.displayPicture(cosmosImage);
         }
         else if (inputSearch.equalsIgnoreCase("Crocus")) {
-            testPlantPage.displayPicture(crocusImage);
+            plantPage.displayPicture(crocusImage);
         }
         else if (inputSearch.equalsIgnoreCase("Daffodil")) {
-            testPlantPage.displayPicture(daffodilImage);
+            plantPage.displayPicture(daffodilImage);
         }
         else if (inputSearch.equalsIgnoreCase("Daisy")) {
-            testPlantPage.displayPicture(daisyImage);
+            plantPage.displayPicture(daisyImage);
         }
         else if (inputSearch.equalsIgnoreCase("Daphne")) {
-            testPlantPage.displayPicture(daphneImage);
+            plantPage.displayPicture(daphneImage);
         }
         else if (inputSearch.equalsIgnoreCase("Daylily")) {
-            testPlantPage.displayPicture(daylilyImage);
+            plantPage.displayPicture(daylilyImage);
         }
         else if (inputSearch.equalsIgnoreCase("Delphinium")) {
-            testPlantPage.displayPicture(delphiniumImage);
+            plantPage.displayPicture(delphiniumImage);
         }
         else if (inputSearch.equalsIgnoreCase("Dianthus Barbatus")) {
-            testPlantPage.displayPicture(dianthusImage);
+            plantPage.displayPicture(dianthusImage);
         }
         else if (inputSearch.equalsIgnoreCase("Geranium")) {
-            testPlantPage.displayPicture(geraniumImage);
+            plantPage.displayPicture(geraniumImage);
         }
         else if (inputSearch.equalsIgnoreCase("Hollyhock")) {
-            testPlantPage.displayPicture(hollyhockImage);
+            plantPage.displayPicture(hollyhockImage);
         }
         else if (inputSearch.equalsIgnoreCase("Lilac")) {
-            testPlantPage.displayPicture(lilacImage);
+            plantPage.displayPicture(lilacImage);
         }
         else if (inputSearch.equalsIgnoreCase("Lily")) {
-            testPlantPage.displayPicture(lilyImage);
+            plantPage.displayPicture(lilyImage);
         }
         else if (inputSearch.equalsIgnoreCase("Marigold")) {
-            testPlantPage.displayPicture(marigoldImage);
+            plantPage.displayPicture(marigoldImage);
         }
         else if (inputSearch.equalsIgnoreCase("Morning Glory")) {
-            testPlantPage.displayPicture(morningImage);
+            plantPage.displayPicture(morningImage);
         }
         else if (inputSearch.equalsIgnoreCase("Primrose")) {
-            testPlantPage.displayPicture(primroseImage);
+            plantPage.displayPicture(primroseImage);
         }
         else if (inputSearch.equalsIgnoreCase("Poppy")) {
-            testPlantPage.displayPicture(poppyImage);
+            plantPage.displayPicture(poppyImage);
         }
         else if (inputSearch.equalsIgnoreCase("Tulip")) {
-            testPlantPage.displayPicture(tulipImage);
+            plantPage.displayPicture(tulipImage);
         }
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);

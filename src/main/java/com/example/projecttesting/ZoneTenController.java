@@ -36,71 +36,71 @@ public class ZoneTenController implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPageZone10.fxml"));
         root = loader.load();
-        PlantPage testPlantPage = loader.getController();
+        PlantPageZone10 plantPage = loader.getController();
         if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         else if (inputSearch.equalsIgnoreCase("")) {
-            //testPlantPage.displayPicture();
+            //plantPage.displayPicture();
         }
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);
