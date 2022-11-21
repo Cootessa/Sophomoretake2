@@ -16,10 +16,12 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class ZoneThreeController implements Initializable {
@@ -91,6 +93,46 @@ public class ZoneThreeController implements Initializable {
         return plant;
     }
 
+    //Images of plants for zone
+    Image alchemillaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Alchemilla.jpg")));
+    Image alliumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Allium.jpg")));
+    Image anemoneImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Anemone.jpg")));
+    Image asterImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Aster.jpg")));
+    Image bachelorImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bachelor's Button.jpg")));
+    Image balloonImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Balloon Flower.jpg")));
+    Image beeImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bee Balm.jpg")));
+    Image begoniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Begonia.jpg")));
+    Image bergamotImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bergamot.jpg")));
+    Image bergeniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bergenia.jpg")));
+    Image susanImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Black-eyed Susan.jpg")));
+    Image blanketImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blanket Flower.jpg")));
+    Image blazingImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blazing Star.jpg")));
+    Image bleedingImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bleeding Heart.jpg")));
+    Image bluegrassImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
+    Image bluestarImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bluestar Flower.jpg")));
+    Image borageImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Borage.jpg")));
+    Image candytuftImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Candytuft.jpg")));
+    Image cardinalImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cardinal Flower.jpg")));
+    Image catmintImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Catmint.jpg")));
+    Image cerastiumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cerastium Tomentosum.jpg")));
+    Image chicoryImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Chicory.jpg")));
+    Image clarkiaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Clarkia.jpg")));
+    Image cloverImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Clover.jpg")));
+    Image columbineImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Columbine.jpg")));
+    Image cornflowerImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cornflower.jpg")));
+    Image cosmosImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cosmos.jpg")));
+    Image crocusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Crocus.jpg")));
+    Image daffodilImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daffodil.jpg")));
+    Image delphiniumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Delphinium.jpg")));
+    Image dianthusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dianthus Barbatus.jpg")));
+    Image geraniumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Geranium.jpg")));
+    Image hollyhockImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Hollyhock.jpg")));
+    Image lilacImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Lilac.jpg")));
+    Image lilyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Lily.jpg")));
+    Image marigoldImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marigold.jpg")));
+    Image morningImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Morning Glory.jpg")));
+    Image tulipImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Tulip.jpg")));
+
 
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException{
@@ -99,118 +141,119 @@ public class ZoneThreeController implements Initializable {
         root = loader.load();
         PlantPage testPlantPage = loader.getController();
         if (inputSearch.equalsIgnoreCase("Alchemilla")){
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(alchemillaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Allium")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(alliumImage);
         }
         else if (inputSearch.equalsIgnoreCase("Anemone")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(anemoneImage);
         }
         else if (inputSearch.equalsIgnoreCase("Aster")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(asterImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bachelor's Button")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(bachelorImage);
         }
         else if (inputSearch.equalsIgnoreCase("Balloon Flower")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(balloonImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bee Balm")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(beeImage);
         }
         else if (inputSearch.equalsIgnoreCase("Begonia")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(begoniaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bergamot")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(bergamotImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bergenia")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(bergeniaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Black-eyed Susan")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(susanImage);
         }
         else if (inputSearch.equalsIgnoreCase("Blanket Flower")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(blanketImage);
         }
         else if (inputSearch.equalsIgnoreCase("Blazing Star")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(blazingImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bleeding Heart")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(bleedingImage);
         }
         else if (inputSearch.equalsIgnoreCase("Bluestar Flower")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(bluestarImage);
         }
         else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(bluegrassImage);
         }
         else if (inputSearch.equalsIgnoreCase("Borage")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(borageImage);
         }
         else if (inputSearch.equalsIgnoreCase("Candytuft")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(candytuftImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cardinal Flower")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(cardinalImage);
         }
         else if (inputSearch.equalsIgnoreCase("Catmint")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(catmintImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cerastium Tomentosum")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(cerastiumImage);
         }
         else if (inputSearch.equalsIgnoreCase("Chicory")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(chicoryImage);
         }
         else if (inputSearch.equalsIgnoreCase("Clarkia")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(clarkiaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Clover")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(cloverImage);
         }
         else if (inputSearch.equalsIgnoreCase("Columbine")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(columbineImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cornflower")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(cornflowerImage);
         }
         else if (inputSearch.equalsIgnoreCase("Cosmos")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(cosmosImage);
         }
         else if (inputSearch.equalsIgnoreCase("Crocus")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(crocusImage);
         }
         else if (inputSearch.equalsIgnoreCase("Daffodil")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(daffodilImage);
         }
         else if (inputSearch.equalsIgnoreCase("Delphinium")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(delphiniumImage);
         }
         else if (inputSearch.equalsIgnoreCase("Dianthus Barbatus")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(dianthusImage);
         }
         else if (inputSearch.equalsIgnoreCase("Geranium")) {
-            //testPlantPage.displayPicture();
-        }else if (inputSearch.equalsIgnoreCase("Hollyhock")) {
-            //testPlantPage.displayPicture();
-        }else if (inputSearch.equalsIgnoreCase("Lilac")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(geraniumImage);
+        }
+        else if (inputSearch.equalsIgnoreCase("Hollyhock")) {
+            testPlantPage.displayPicture(hollyhockImage);
+        }
+        else if (inputSearch.equalsIgnoreCase("Lilac")) {
+            testPlantPage.displayPicture(lilacImage);
         }
         else if (inputSearch.equalsIgnoreCase("Lily")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(lilyImage);
         }
         else if (inputSearch.equalsIgnoreCase("Marigold")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(marigoldImage);
         }
         else if (inputSearch.equalsIgnoreCase("Morning Glory")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(morningImage);
         }
         else if (inputSearch.equalsIgnoreCase("Tulip")) {
-            //testPlantPage.displayPicture();
+            testPlantPage.displayPicture(tulipImage);
         }
-
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
