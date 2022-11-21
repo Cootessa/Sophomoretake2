@@ -36,6 +36,11 @@ public class Zonetwocontroller implements Initializable {
 
     Image marigoldImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marigold.jpg")));
     Image begoniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Begonia.jpg")));
+    Image bluegrassImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
+    Image clarkiaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Clarkia.jpg")));
+    Image cornflowerImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cornflower.jpg")));
+    Image cosmosImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cosmos.jpg")));
+
 
 
     private ObservableList<Plant> plant = FXCollections.observableArrayList();
@@ -48,20 +53,17 @@ public class Zonetwocontroller implements Initializable {
         PlantPage testPlantPage = loader.getController();
          if (inputSearch.equalsIgnoreCase("Begonia")) {
             testPlantPage.displayPicture(begoniaImage);
-
-        } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
-            testPlantPage.displayPicture(begoniaImage); //need to change picture
-
-        } else if (inputSearch.equalsIgnoreCase("Clarkia")) {
-            testPlantPage.displayPicture(begoniaImage); //need to change picture
-
-        } else if (inputSearch.equalsIgnoreCase("Cornflower")) {
-            testPlantPage.displayPicture(begoniaImage); //need to change image
-
-        } else if (inputSearch.equalsIgnoreCase("Cosmos")) {
-            testPlantPage.displayPicture(begoniaImage); //need to change image
-
-        }
+         } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
+            testPlantPage.displayPicture(bluegrassImage);
+         }
+         else if (inputSearch.equalsIgnoreCase("Clarkia")) {
+            testPlantPage.displayPicture(clarkiaImage);
+         } else if (inputSearch.equalsIgnoreCase("Cornflower")) {
+            testPlantPage.displayPicture(cornflowerImage);
+         }
+         else if (inputSearch.equalsIgnoreCase("Cosmos")) {
+            testPlantPage.displayPicture(cosmosImage);
+         }
         else if (inputSearch.equalsIgnoreCase("Marigold")) {
             testPlantPage.displayPicture(marigoldImage);
             }

@@ -33,7 +33,6 @@ public class ZoneController {
 
     }
 
-
     public void zone3(ActionEvent e) throws IOException{
         root = FXMLLoader.load(getClass().getResource("ZoneThreeScreen.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -41,7 +40,6 @@ public class ZoneController {
         stage.setScene(scene);
         stage.show();
         System.out.println("You have picked Zone 3");
-
     }
 
     public void zone4(ActionEvent e) throws IOException{
@@ -51,7 +49,6 @@ public class ZoneController {
         stage.setScene(scene);
         stage.show();
         System.out.println("You have picked Zone 4");
-
     }
 
     public void zone5(ActionEvent e) throws IOException{
@@ -107,8 +104,6 @@ public class ZoneController {
         stage.show();
         System.out.println("You have picked Zone 10");
     }
-
-
 
     public void exit(ActionEvent e){
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
