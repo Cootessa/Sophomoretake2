@@ -110,105 +110,90 @@ public class ZoneEightController implements Initializable {
         String inputSearch = filterField.getText();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPageZone8.fxml"));
         root = loader.load();
-        PlantPage PlantPageZone8 = loader.getController();
+        PlantPageZone8 plantPage = loader.getController();
         if (inputSearch.equalsIgnoreCase("Agapanthus")) {
-            PlantPageZone8.displayPicture(agapanthusImage);
+            plantPage.displayPicture(agapanthusImage);
 
         } else if (inputSearch.equalsIgnoreCase("Alchemilla")) {
-            PlantPageZone8.displayPicture(alchemillaImage);
+            plantPage.displayPicture(alchemillaImage);
         } else if (inputSearch.equalsIgnoreCase("Allium")) {
-            PlantPageZone8.displayPicture(alliumImage);
+            plantPage.displayPicture(alliumImage);
         } else if (inputSearch.equalsIgnoreCase("Alstroemeria")) {
-            PlantPageZone8.displayPicture(alstroemeriaImage);
+            plantPage.displayPicture(alstroemeriaImage);
         } else if (inputSearch.equalsIgnoreCase("Alyssum")) {
-            PlantPageZone8.displayPicture(alyssumImage);
+            plantPage.displayPicture(alyssumImage);
         } else if (inputSearch.equalsIgnoreCase("Anemone")) {
-            PlantPageZone8.displayPicture(anemoneImage);
+            plantPage.displayPicture(anemoneImage);
         } else if (inputSearch.equalsIgnoreCase("Anise Hyssop")) {
-            PlantPageZone8.displayPicture(anisehyssopImage);
+            plantPage.displayPicture(anisehyssopImage);
         } else if (inputSearch.equalsIgnoreCase("Armeria Maritima")) {
-            PlantPageZone8.displayPicture(armeria_mImage);
+            plantPage.displayPicture(armeria_mImage);
         } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
+            plantPage.displayPicture(asterImage);
         } else if (inputSearch.equalsIgnoreCase("Azalea")) {
-            PlantPageZone8.displayPicture(azaleaImage);}
+            plantPage.displayPicture(azaleaImage);}
         else if (inputSearch.equalsIgnoreCase("Baby's Breath")) {
-            PlantPageZone8.displayPicture(babys_bImage);
+            plantPage.displayPicture(babys_bImage);
         } else if (inputSearch.equalsIgnoreCase("Bachelor's Button")) {
-            PlantPageZone8.displayPicture(bachelors_bImage);
+            plantPage.displayPicture(bachelors_bImage);
         } else if (inputSearch.equalsIgnoreCase("Balloon Flower")) {
-            PlantPageZone8.displayPicture(balloon_fImage);
+            plantPage.displayPicture(balloon_fImage);
         } else if (inputSearch.equalsIgnoreCase("Ballota")) {
-            PlantPageZone8.displayPicture(ballotaImage);
+            plantPage.displayPicture(ballotaImage);
         } else if (inputSearch.equalsIgnoreCase("Bee Balm")) {
-            PlantPageZone8.displayPicture(beebalmImage);
+            plantPage.displayPicture(beebalmImage);
         } else if (inputSearch.equalsIgnoreCase("Begonia")) {
-            PlantPageZone8.displayPicture(begoniaImage);
+            plantPage.displayPicture(begoniaImage);
         } else if (inputSearch.equalsIgnoreCase("Bergamot")) {
-            PlantPageZone8.displayPicture(bergamotImage);
+            plantPage.displayPicture(bergamotImage);
         } else if (inputSearch.equalsIgnoreCase("Bergenia")) {
-            PlantPageZone8.displayPicture(bergeniaImage);
+            plantPage.displayPicture(bergeniaImage);
         } else if (inputSearch.equalsIgnoreCase("Black-eyed Susan")) {
-            PlantPageZone8.displayPicture(black_eyedImage);
+            plantPage.displayPicture(black_eyedImage);
         } else if (inputSearch.equalsIgnoreCase("Blanket Flower")) {
-            PlantPageZone8.displayPicture(blanket_fImage);
+            plantPage.displayPicture(blanket_fImage);
         } else if (inputSearch.equalsIgnoreCase("Blazing Star")) {
-            PlantPageZone8.displayPicture(blazingstarImage);
+            plantPage.displayPicture(blazingstarImage);
         } else if (inputSearch.equalsIgnoreCase("Bleeding Heart")) {
-            PlantPageZone8.displayPicture(bleeding_hImage);
+            plantPage.displayPicture(bleeding_hImage);
         } else if (inputSearch.equalsIgnoreCase("Bletilla")) {
-            PlantPageZone8.displayPicture(bletillaImage);
+            plantPage.displayPicture(bletillaImage);
         } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
-            PlantPageZone8.displayPicture(blue_eyedImage);
+            plantPage.displayPicture(blue_eyedImage);
         } else if (inputSearch.equalsIgnoreCase("Borage")) {
-            PlantPageZone8.displayPicture(borageImage);
+            plantPage.displayPicture(borageImage);
         } else if (inputSearch.equalsIgnoreCase("Bottlebrush")) {
-            PlantPageZone8.displayPicture(bottlebrushImage);
+            plantPage.displayPicture(bottlebrushImage);
         } else if (inputSearch.equalsIgnoreCase("Bouvardia")) {
-            PlantPageZone8.displayPicture(bouvardiaImage);
+            plantPage.displayPicture(bouvardiaImage);
         } else if (inputSearch.equalsIgnoreCase("Brachyscome")) {
-            PlantPageZone8.displayPicture(brachyscomeImage);
+            plantPage.displayPicture(brachyscomeImage);
         } else if (inputSearch.equalsIgnoreCase("Brassica")) {
-            PlantPageZone8.displayPicture(brassicaImage);
+            plantPage.displayPicture(brassicaImage);
         } else if (inputSearch.equalsIgnoreCase("Broom")) {
-            PlantPageZone8.displayPicture(broomImage);
+            plantPage.displayPicture(broomImage);
         } else if (inputSearch.equalsIgnoreCase("Buttercup")) {
-            PlantPageZone8.displayPicture(buttercupImage);
+            plantPage.displayPicture(buttercupImage);
         } else if (inputSearch.equalsIgnoreCase("Butterfly Bush")) {
-            PlantPageZone8.displayPicture(butterfly_bImage);
+            plantPage.displayPicture(butterfly_bImage);
         } else if (inputSearch.equalsIgnoreCase("Calendula")) {
-            PlantPageZone8.displayPicture(calendulaImage);
+            plantPage.displayPicture(calendulaImage);
         } else if (inputSearch.equalsIgnoreCase("Camellia")) {
-            PlantPageZone8.displayPicture(camelliaImage);
+            plantPage.displayPicture(camelliaImage);
         } else if (inputSearch.equalsIgnoreCase("Candytuft")) {
-            PlantPageZone8.displayPicture(candytuftImage);
+            plantPage.displayPicture(candytuftImage);
         } else if (inputSearch.equalsIgnoreCase("Cape Leadwort")) {
-            PlantPageZone8.displayPicture(cape_lImage);
+            plantPage.displayPicture(cape_lImage);
         } else if (inputSearch.equalsIgnoreCase("Cardinal Flower")) {
-            PlantPageZone8.displayPicture(cardinal_fImage);
+            plantPage.displayPicture(cardinal_fImage);
         } else if (inputSearch.equalsIgnoreCase("Carnation")) {
-            PlantPageZone8.displayPicture(carnationImage);
+            plantPage.displayPicture(carnationImage);
         } else if (inputSearch.equalsIgnoreCase("Catmint")) {
-            PlantPageZone8.displayPicture(catmintImage);
-        /*} else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
-        } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
-        } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
-        } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
-        } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
-        } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
-        } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);
-        } else if (inputSearch.equalsIgnoreCase("Aster")) {
-            PlantPageZone8.displayPicture(asterImage);*/
+            plantPage.displayPicture(catmintImage);
+
         }
         else if (inputSearch.equalsIgnoreCase("Wisteria")) {
-            PlantPageZone8.displayPicture(wisteriaImage);
+            plantPage.displayPicture(wisteriaImage);
         }
 
             stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
