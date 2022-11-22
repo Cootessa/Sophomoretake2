@@ -48,7 +48,7 @@ public class Zonetwocontroller implements Initializable {
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
         String inputSearch = filterField.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPageZone2.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPage.fxml"));
         root = loader.load();
         PlantPage plantPage = loader.getController();
          if (inputSearch.equalsIgnoreCase("Begonia")) {
