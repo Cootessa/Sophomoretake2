@@ -64,7 +64,7 @@ public class ZoneNineController implements Initializable {
     Image blue_eyedImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
     Image bluebonnetsImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bluebonnets.jpg")));
     Image borageImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Borage.jpg")));
-    Image bottlebrushImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bottlebrush.jpg")));
+    Image bottlebushImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bottlebush.jpg")));
     Image bouvardiaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bouvardia.jpg")));
     Image brachyscomeImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Brachyscome.jpg")));
     Image brassicaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Brassica.jpg")));
@@ -138,8 +138,8 @@ public class ZoneNineController implements Initializable {
             plantPage.displayPicture(blue_eyedImage);
         } else if (inputSearch.equalsIgnoreCase("Borage")) {
             plantPage.displayPicture(borageImage);
-        } else if (inputSearch.equalsIgnoreCase("Bottlebrush")) {
-            plantPage.displayPicture(bottlebrushImage);
+        } else if (inputSearch.equalsIgnoreCase("Bottlebush")) {
+            plantPage.displayPicture(bottlebushImage);
         } else if (inputSearch.equalsIgnoreCase("Bouvardia")) {
             plantPage.displayPicture(bouvardiaImage);
         } else if (inputSearch.equalsIgnoreCase("Brachyscome")) {
