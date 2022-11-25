@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -34,6 +35,7 @@ public class Zonetwocontroller implements Initializable {
     @FXML private TableColumn<Plant, String> plantName;
 
     private ObservableList<Plant> plant = FXCollections.observableArrayList();
+
 
 
     //Back Button Controller
@@ -132,6 +134,7 @@ public class Zonetwocontroller implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
 
 }
 
