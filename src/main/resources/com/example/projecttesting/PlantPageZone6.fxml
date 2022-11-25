@@ -5,12 +5,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecttesting.PlantPageZone6">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecttesting.PlantPageZone6">
    <children>
-      <Button layoutX="506.0" layoutY="20.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="68.0" text="Back">
+      <ImageView fx:id="flowerPic" fitHeight="487.0" fitWidth="857.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="777.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="68.0" text="Back">
          <font>
             <Font size="15.0" />
          </font></Button>
-      <ImageView fx:id="flowerPic" fitHeight="436.0" fitWidth="600.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
