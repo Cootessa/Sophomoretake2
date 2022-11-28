@@ -36,15 +36,15 @@ public class ZoneTenController implements Initializable {
     Image abutilonImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Abutilon.jpg")));
     Image agapanthusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Agapanthus.jpg")));
     Image ageratumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Ageratum.jpg")));
-    Image amaranthusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaranthus.jpg")));
-    Image amaryllusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaryllus.jpg")));
+    Image amaranthusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaranthus.JPG")));
+    Image amaryllusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaryllis.jpg")));
     Image ballotaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Ballota.jpg")));
     Image begoniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Begonia.jpg")));
     Image billbergiaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Billbergia.jpg")));
     Image black_eyedImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Black-eyed Susan.jpg")));
     Image blazingstarImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blazing Star.jpg")));
     Image borageImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Borage.jpg")));
-    Image bottlebrushImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bottlebrush.jpg")));
+    Image bottlebrushImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bottlebush.jpg")));
     Image bouvardiaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bouvardia.jpg")));
     Image brachyscomeImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Brachyscome.jpg")));
     Image broomImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Broom.jpg")));
@@ -72,7 +72,7 @@ public class ZoneTenController implements Initializable {
     Image dillImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dill.jpg")));
     Image margueriteImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marguerite.jpg")));
     Image marigoldImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marigold.jpg")));
-    Image moonflowerImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Moonflower.jpg")));
+    Image moonflowerImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Moonflower.jpeg")));
     Image morning_gImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Morning Glory.jpg")));
     Image petuniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Petunia.jpg")));
     Image rosea_iceImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Rosea Ice Plant.jpg")));
@@ -108,7 +108,7 @@ public class ZoneTenController implements Initializable {
             plantPage.displayPicture(blazingstarImage);
         } else if (inputSearch.equalsIgnoreCase("Borage")) {
             plantPage.displayPicture(borageImage);
-        } else if (inputSearch.equalsIgnoreCase("Bottlebrush")) {
+        } else if (inputSearch.equalsIgnoreCase("Bottlebush")) {
             plantPage.displayPicture(bottlebrushImage);
         } else if (inputSearch.equalsIgnoreCase("Bouvardia")) {
             plantPage.displayPicture(bouvardiaImage);
@@ -216,7 +216,7 @@ public class ZoneTenController implements Initializable {
     public ObservableList<Plant> getPlant(){
         plant.addAll(new Plant("Abutilon"),new Plant("Agapanthus"), new Plant("Ageratum"),
                 new Plant("Amaranthus"), new Plant("Amaryllus"), new Plant("Ballota"), new Plant("Bee Balm"), new Plant("Begonia"), new Plant("Billbergia")
-                , new Plant("Black-eyed Susan"), new Plant("Blazing Star"), new Plant("Borage"),new Plant("Bottlebrush"), new Plant("Bouvardia"), new Plant("Brachyscome")
+                , new Plant("Black-eyed Susan"), new Plant("Blazing Star"), new Plant("Borage"),new Plant("Bottlebush"), new Plant("Bouvardia"), new Plant("Brachyscome")
                 , new Plant("Broom"), new Plant("Buttercup"), new Plant("Calceolaria"), new Plant("Camellia"), new Plant("Calendula"), new Plant("Cape Leadwort"), new Plant("Catharanthus"), new Plant("Celosia")
                 , new Plant("Chicory"), new Plant("Clarkia"), new Plant("Clover"), new Plant("Coral Vine"), new Plant("Cornflower"), new Plant("Cosmos"),new Plant("Dahlia"), new Plant("Dandelion"), new Plant("Daphne")
                 , new Plant("Daylily"), new Plant("Desert Rose"), new Plant("Dianella"), new Plant("Diascia"),new Plant("Dietes"),new Plant("Dill")

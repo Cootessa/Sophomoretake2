@@ -95,7 +95,7 @@ public class ZoneEightController implements Initializable {
     Image cuckoo_fImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Cuckoo Flower.jpg")));
     Image daffodilImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daffodil.jpg")));
     Image dahliaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dahlia.jpg")));
-    Image daisyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daisy.jpg")));
+    Image daisyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daisy.jpeg")));
     Image dandelionImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dandelion.jpg")));
     Image daphneImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daphne.jpg")));
     Image daylilyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daylily.jpg")));

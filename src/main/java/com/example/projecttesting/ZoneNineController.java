@@ -40,8 +40,8 @@ public class ZoneNineController implements Initializable {
     Image alliumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Allium.jpg")));
     Image alstroemeriaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Alstroemeria.jpg")));
     Image alyssumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Alyssum.jpg")));
-    Image amaranthusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaranthus.jpg")));
-    Image amaryllusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaryllus.jpg")));
+    Image amaranthusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaranthus.JPG")));
+    Image amaryllusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Amaryllis.jpg")));
     Image azaleaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Azalea.jpg")));
     Image babys_bImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Baby's Breath.jpg")));
     Image ballotaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Ballota.jpg")));
@@ -85,7 +85,7 @@ public class ZoneNineController implements Initializable {
     Image crocosmiaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Crocosmia.jpg")));
     Image crown_iImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Crown Imperial.jpg")));
     Image dahliaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dahlia.jpg")));
-    Image daisyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daisy.jpg")));
+    Image daisyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daisy.jpeg")));
     Image dandelionImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dandelion.jpg")));
     Image daphneImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daphne.jpg")));
     Image daylilyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Daylily.jpg")));
