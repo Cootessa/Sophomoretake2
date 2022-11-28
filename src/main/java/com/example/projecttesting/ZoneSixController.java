@@ -11,10 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -368,6 +365,15 @@ public class ZoneSixController implements Initializable {
         }
         else if (inputSearch.equalsIgnoreCase("Wisteria")) {
             plantPage.displayPicture(wisteriaImage);
+        }
+        else if(((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
+            FXMLLoader wrong = new FXMLLoader(getClass().getResource("ZoneSixScreen.fxml"));
+            Alert invalid = new Alert(Alert.AlertType.WARNING);
+            invalid.setTitle("Invalid Plant");
+            invalid.setHeaderText("Invalid plant has been entered");
+            invalid.setContentText("The plant you have entered does not exist in this zone or was misspelled. Please try again.");
+            invalid.showAndWait();
+            root = wrong.load();
         }
 
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();

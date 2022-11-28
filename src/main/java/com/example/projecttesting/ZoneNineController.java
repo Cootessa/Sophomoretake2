@@ -11,10 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -58,7 +55,7 @@ public class ZoneNineController implements Initializable {
     Image blue_eyedImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
     Image bluestar_fImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bluestar Flower.jpg")));
     Image borageImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Borage.jpg")));
-    Image bottlebrushImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bottlebrush.jpg")));
+    Image bottlebushImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bottlebush.jpg")));
     Image bouvardiaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bouvardia.jpg")));
     Image brachyscomeImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Brachyscome.jpg")));
     Image brassicaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Brassica.jpg")));
@@ -156,8 +153,8 @@ public class ZoneNineController implements Initializable {
             plantPage.displayPicture(bluestar_fImage);
         } else if (inputSearch.equalsIgnoreCase("Borage")) {
             plantPage.displayPicture(borageImage);
-        } else if (inputSearch.equalsIgnoreCase("Bottlebrush")) {
-            plantPage.displayPicture(bottlebrushImage);
+        } else if (inputSearch.equalsIgnoreCase("Bottlebush")) {
+            plantPage.displayPicture(bottlebushImage);
         } else if (inputSearch.equalsIgnoreCase("Bouvardia")) {
             plantPage.displayPicture(bouvardiaImage);
         } else if (inputSearch.equalsIgnoreCase("Brachyscome")) {
@@ -255,6 +252,16 @@ public class ZoneNineController implements Initializable {
         }
         else if (inputSearch.equalsIgnoreCase("Wisteria")) {
             plantPage.displayPicture(wisteriaImage);
+        }
+
+        else if(((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
+            FXMLLoader wrong = new FXMLLoader(getClass().getResource("ZoneNineScreen.fxml"));
+            Alert invalid = new Alert(Alert.AlertType.WARNING);
+            invalid.setTitle("Invalid Plant");
+            invalid.setHeaderText("Invalid plant has been entered");
+            invalid.setContentText("The plant you have entered does not exist in this zone or was misspelled. Please try again.");
+            invalid.showAndWait();
+            root = wrong.load();
         }
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);

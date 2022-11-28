@@ -19,6 +19,11 @@
       </ImageView>
       <Button layoutX="525.0" layoutY="15.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="61.0" text="Back" />
       <TextField fx:id="filterField" layoutX="77.0" layoutY="338.0" prefHeight="25.0" prefWidth="352.0" />
+      <ImageView fitHeight="220.0" fitWidth="418.0" layoutX="77.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Zone%202%20Map.png" />
+         </image>
+      </ImageView>
       <Button defaultButton="true" layoutX="437.0" layoutY="338.0" mnemonicParsing="false" onAction="#buttonSearch" text="Search" />
       <TableView fx:id="tableView" layoutX="77.0" layoutY="369.0" prefHeight="284.0" prefWidth="398.0">
         <columns>
