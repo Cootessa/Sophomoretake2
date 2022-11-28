@@ -52,7 +52,7 @@ public class ZoneNineController implements Initializable {
     Image blazingstarImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blazing Star.jpg")));
     Image bleeding_hImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bleeding Heart.jpg")));
     Image bletillaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bletilla.jpg")));
-    Image blue_eyedImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
+    Image bluegrassImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
     Image bluestar_fImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bluestar Flower.jpg")));
     Image borageImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Borage.jpg")));
     Image bottlebushImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bottlebush.jpg")));
@@ -94,7 +94,7 @@ public class ZoneNineController implements Initializable {
     Image diasciaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Diascia.jpg")));
     Image dietesImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dietes.jpg")));
     Image dillImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dill.jpg")));
-    Image dutch_irisImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dutch Irisjpg")));
+    Image dutch_irisImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dutch Iris.jpg")));
     Image geraniumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Geranium.jpg")));
     Image lavenderImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Lavender.jpg")));
     Image margueriteImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Marguerite.jpg")));
@@ -148,7 +148,7 @@ public class ZoneNineController implements Initializable {
         } else if (inputSearch.equalsIgnoreCase("Bletilla")) {
             plantPage.displayPicture(bletillaImage);
         } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
-            plantPage.displayPicture(blue_eyedImage);
+            plantPage.displayPicture(bluegrassImage);
         } else if (inputSearch.equalsIgnoreCase("Bluestar Flower")) {
             plantPage.displayPicture(bluestar_fImage);
         } else if (inputSearch.equalsIgnoreCase("Borage")) {

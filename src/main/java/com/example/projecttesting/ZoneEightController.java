@@ -57,7 +57,7 @@ public class ZoneEightController implements Initializable {
     Image blazingstarImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blazing Star.jpg")));
     Image bleeding_hImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bleeding Heart.jpg")));
     Image bletillaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bletilla.jpg")));
-    Image blue_eyedImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
+    Image bluegrassImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Blue-eyed Grass.jpg")));
     Image bluebonnetsImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bluebonnets.jpg")));
     Image bluestar_fImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Bluestar Flower.jpg")));
     Image borageImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Borage.jpg")));
@@ -103,7 +103,7 @@ public class ZoneEightController implements Initializable {
     Image deutziaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Deutzia.jpg")));
     Image dianthus_bImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dianthus Barbatus.jpg")));
     Image diasciaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Diascia.jpg")));
-    Image dutch_irisImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dutch Irisjpg")));
+    Image dutch_irisImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Dutch Iris.jpg")));
     Image geraniumImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Geranium.jpg")));
     Image hollyhockImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Hollyhock.jpg")));
     Image lavenderImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Lavender.jpg")));
@@ -172,7 +172,7 @@ public class ZoneEightController implements Initializable {
         } else if (inputSearch.equalsIgnoreCase("Bletilla")) {
             plantPage.displayPicture(bletillaImage);
         } else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
-            plantPage.displayPicture(blue_eyedImage);
+            plantPage.displayPicture(bluegrassImage);
         } else if (inputSearch.equalsIgnoreCase("Bluebonnets")) {
             plantPage.displayPicture(bluebonnetsImage);
         } else if (inputSearch.equalsIgnoreCase("Bluestar Flower")) {

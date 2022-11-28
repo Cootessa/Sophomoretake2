@@ -220,7 +220,7 @@ public class ZoneTenController implements Initializable {
                 , new Plant("Broom"), new Plant("Buttercup"), new Plant("Calceolaria"), new Plant("Camellia"), new Plant("Calendula"), new Plant("Cape Leadwort"), new Plant("Catharanthus"), new Plant("Celosia")
                 , new Plant("Chicory"), new Plant("Clarkia"), new Plant("Clover"), new Plant("Coral Vine"), new Plant("Cornflower"), new Plant("Cosmos"),new Plant("Dahlia"), new Plant("Dandelion"), new Plant("Daphne")
                 , new Plant("Daylily"), new Plant("Desert Rose"), new Plant("Dianella"), new Plant("Diascia"),new Plant("Dietes"),new Plant("Dill")
-                ,new Plant("Marguerite"), new Plant("Marigold"), new Plant("Moonflower"), new Plant("Morning Glory"), new Plant("Petunia"), new Plant("Rosea Ice Plant")
+                , new Plant("Marguerite"), new Plant("Marigold"), new Plant("Moonflower"), new Plant("Morning Glory"), new Plant("Petunia"), new Plant("Rosea Ice Plant")
                 , new Plant("Wisteria"));
         return plant;
     }
