@@ -2,6 +2,8 @@ package com.example.projecttesting;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -50,7 +52,30 @@ public class ZoneTenController implements Initializable {
         plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
         tableView.setItems(getPlant());
 
+        //Below is what makes the table searchable
+        //Filtered List
+        FilteredList<Plant> plantFilteredList = new FilteredList<>(plant, b -> true);
+        filterField.textProperty().addListener((observable, oldValue, newValue) -> {
+            plantFilteredList.setPredicate(plant -> {
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                String lowerCaseFilter = newValue.toLowerCase();
+                if (plant.getPlantName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+
+            });
+        });
+        //Sorted List
+        SortedList<Plant> sortedList = new SortedList<>(plantFilteredList);
+        sortedList.comparatorProperty().bind(tableView.comparatorProperty());
+        tableView.setItems(sortedList);
+
     }
+
     //Add to Table
     public ObservableList<Plant> getPlant(){
         plant.addAll(new Plant("Abutilon"),new Plant("Agapanthus"), new Plant("Ageratum"),

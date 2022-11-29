@@ -75,6 +75,7 @@ public class ZoneSixController implements Initializable {
         tableView.setItems(sortedList);
 
     }
+
     //Add to Table
     public ObservableList<Plant> getPlant(){
         plant.addAll(new Plant("Aconite"), new Plant("Alchemilla"), new Plant("Allium"), new Plant("Alyssum"), new Plant("Anise Hyssop"),
