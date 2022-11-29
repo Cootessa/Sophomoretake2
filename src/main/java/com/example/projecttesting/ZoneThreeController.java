@@ -21,13 +21,14 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+//Controller for Zone 3
+
 public class ZoneThreeController implements Initializable {
 
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private Label label;
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
@@ -42,7 +43,6 @@ public class ZoneThreeController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        System.out.println("You have gone back");
     }
 
 

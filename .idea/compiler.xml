@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ProjectTesting" options="--add-exports java.base/jdk.internal.jimage=com.example.projecttesting" />
+      <module name="ProjectTesting" options="" />
     </option>
   </component>
 </project>

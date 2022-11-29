@@ -3,6 +3,8 @@ package com.example.projecttesting;
 
 import javafx.beans.property.SimpleStringProperty;
 
+//Sets up table entries
+
 public class Plant{
     private SimpleStringProperty plantName;
 

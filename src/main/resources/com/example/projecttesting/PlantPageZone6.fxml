@@ -8,7 +8,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecttesting.PlantPageZone6">
    <children>
       <ImageView fx:id="flowerPic" fitHeight="487.0" fitWidth="857.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="777.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="68.0" text="Back">
+      <Button layoutX="777.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="68.0" style="-fx-border-color: #ce9ff2;" styleClass="searchbutton" stylesheets="@style.css" text="Back">
          <font>
             <Font size="15.0" />
          </font></Button>

@@ -19,18 +19,50 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+//Controller for Zone 10
+
 public class ZoneTenController implements Initializable {
 
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private Label label;
-    private Label invalid;
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
     private ObservableList<Plant> plant = FXCollections.observableArrayList();
+
+
+    //Back Button Controller
+    public void back(ActionEvent e) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("ZonePick.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
+    //Initializes Columns
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        //Sets up Columns
+        plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
+        tableView.setItems(getPlant());
+
+    }
+    //Add to Table
+    public ObservableList<Plant> getPlant(){
+        plant.addAll(new Plant("Abutilon"),new Plant("Agapanthus"), new Plant("Ageratum"),
+                new Plant("Amaranthus"), new Plant("Amaryllus"), new Plant("Ballota"), new Plant("Bee Balm"), new Plant("Begonia"), new Plant("Billbergia")
+                , new Plant("Black-eyed Susan"), new Plant("Blazing Star"), new Plant("Borage"),new Plant("Bottlebush"), new Plant("Bouvardia"), new Plant("Brachyscome")
+                , new Plant("Broom"), new Plant("Buttercup"), new Plant("Calceolaria"), new Plant("Camellia"), new Plant("Calendula"), new Plant("Cape Leadwort"), new Plant("Catharanthus"), new Plant("Celosia")
+                , new Plant("Chicory"), new Plant("Clarkia"), new Plant("Clover"), new Plant("Coral Vine"), new Plant("Cornflower"), new Plant("Cosmos"),new Plant("Dahlia"), new Plant("Dandelion"), new Plant("Daphne")
+                , new Plant("Daylily"), new Plant("Desert Rose"), new Plant("Dianella"), new Plant("Diascia"),new Plant("Dietes"),new Plant("Dill")
+                , new Plant("Marguerite"), new Plant("Marigold"), new Plant("Moonflower"), new Plant("Morning Glory"), new Plant("Petunia"), new Plant("Rosea Ice Plant")
+                , new Plant("Wisteria"));
+        return plant;
+    }
 
     //Plant info card
     Image abutilonImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Abutilon.jpg")));
@@ -77,7 +109,6 @@ public class ZoneTenController implements Initializable {
     Image petuniaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Petunia.jpg")));
     Image rosea_iceImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Rosea Ice Plant.jpg")));
     Image wisteriaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Wisteria.jpg")));
-
 
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
@@ -190,38 +221,5 @@ public class ZoneTenController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-    }
-
-
-    //Back Button Controller
-    public void back(ActionEvent e) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("ZonePick.fxml"));
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-        System.out.println("You have gone back");
-    }
-
-
-    //Initializes Columns
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        //Sets up Columns
-        plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
-        tableView.setItems(getPlant());
-
-    }
-    //Add to Table
-    public ObservableList<Plant> getPlant(){
-        plant.addAll(new Plant("Abutilon"),new Plant("Agapanthus"), new Plant("Ageratum"),
-                new Plant("Amaranthus"), new Plant("Amaryllus"), new Plant("Ballota"), new Plant("Bee Balm"), new Plant("Begonia"), new Plant("Billbergia")
-                , new Plant("Black-eyed Susan"), new Plant("Blazing Star"), new Plant("Borage"),new Plant("Bottlebush"), new Plant("Bouvardia"), new Plant("Brachyscome")
-                , new Plant("Broom"), new Plant("Buttercup"), new Plant("Calceolaria"), new Plant("Camellia"), new Plant("Calendula"), new Plant("Cape Leadwort"), new Plant("Catharanthus"), new Plant("Celosia")
-                , new Plant("Chicory"), new Plant("Clarkia"), new Plant("Clover"), new Plant("Coral Vine"), new Plant("Cornflower"), new Plant("Cosmos"),new Plant("Dahlia"), new Plant("Dandelion"), new Plant("Daphne")
-                , new Plant("Daylily"), new Plant("Desert Rose"), new Plant("Dianella"), new Plant("Diascia"),new Plant("Dietes"),new Plant("Dill")
-                , new Plant("Marguerite"), new Plant("Marigold"), new Plant("Moonflower"), new Plant("Morning Glory"), new Plant("Petunia"), new Plant("Rosea Ice Plant")
-                , new Plant("Wisteria"));
-        return plant;
     }
 }

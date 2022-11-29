@@ -21,17 +21,78 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+//Controller for Zone 8
+
 public class ZoneEightController implements Initializable {
 
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private Label label;
-    private Label invalid;
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
+
+    private ObservableList<Plant> plant = FXCollections.observableArrayList();
+
+
+    //Back Button Controller
+    public void back(ActionEvent e) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("ZonePick.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
+    //Initializes Columns
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        //Sets up Columns
+        plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
+        tableView.setItems(getPlant());
+            //Below is what makes the table searchable
+            //Filtered List
+            FilteredList<Plant> plantFilteredList = new FilteredList<>(plant, b -> true);
+            filterField.textProperty().addListener((observable, oldValue, newValue) -> {
+                plantFilteredList.setPredicate(plant -> {
+                    if (newValue == null || newValue.isEmpty()) {
+                        return true;
+                    }
+                    String lowerCaseFilter = newValue.toLowerCase();
+                    if (plant.getPlantName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+
+                });
+            });
+            //Sorted List
+            SortedList<Plant> sortedList = new SortedList<>(plantFilteredList);
+            sortedList.comparatorProperty().bind(tableView.comparatorProperty());
+            tableView.setItems(sortedList);
+    }
+
+    //Add to Table
+    public ObservableList<Plant> getPlant(){
+        //ObservableList<Plant> plant = FXCollections.observableArrayList();
+        plant.addAll(new Plant("Agapanthus"), new Plant("Alchemilla"), new Plant("Allium"), new Plant("Alstroemeria"),new Plant("Alyssum"), new Plant("Anemone")
+                , new Plant("Anise Hyssop"), new Plant("Armeria Maritima"), new Plant("Aster"), new Plant("Azalea"), new Plant("Baby's Breath"), new Plant("Bachelor's Button")
+                , new Plant("Balloon Flower"), new Plant("Ballota"), new Plant("Bee Balm"), new Plant("Begonia"), new Plant("Bergamot"), new Plant("Bergenia")
+                , new Plant("Black-eyed Susan"), new Plant("Blanket Flower"), new Plant("Blazing Star"), new Plant("Bleeding Heart"), new Plant("Bletilla"), new Plant("Blue-eyed Grass")
+                , new Plant("Bluebonnets"), new Plant("Bluestar Flower"), new Plant("Borage"),new Plant("Bottlebrush"), new Plant("Bouvardia"), new Plant("Brachyscome"), new Plant("Brassica")
+                , new Plant("Broom"), new Plant("Buttercup"), new Plant("Butterfly Bush"), new Plant("Cardinal Flower"), new Plant("Calendula"), new Plant("Camellia"), new Plant("Candytuft")
+                , new Plant("Cape Leadwort"), new Plant("Carnation"), new Plant("Catmint"), new Plant("Chicory"), new Plant("Chionodoxa"), new Plant("Chrysanthemum")
+                , new Plant("Clarkia"), new Plant("Clematis"), new Plant("Clover"), new Plant("Columbine"), new Plant("Coneflower"), new Plant("Coral Bells")
+                , new Plant("Coreopsis"), new Plant("Cornflower"), new Plant("Corydalis"), new Plant("Cosmos"), new Plant("Cotoneaster"),new Plant("Crocosmia"), new Plant("Crocus")
+                , new Plant("Crown Imperial"), new Plant("Cuckoo Flower"), new Plant("Daffodil"), new Plant("Dahlia"), new Plant("Daisy"), new Plant("Dandelion"), new Plant("Daphne")
+                , new Plant("Daylily"), new Plant("Decumaria"), new Plant("Deutzia"), new Plant("Dianthus Barbatus"), new Plant("Diascia"), new Plant("Dutch Iris"), new Plant("Geranium")
+                , new Plant("Hollyhock"), new Plant("Lavender"), new Plant("Lilac"), new Plant("Lily"), new Plant("Marguerite"), new Plant("Marigold"), new Plant("Morning Glory")
+                , new Plant("Primrose"), new Plant("Rose"), new Plant("Wisteria"));
+        return plant;
+    }
 
     //Plant info card
     Image agapanthusImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Agapanthus.jpg")));
@@ -115,8 +176,6 @@ public class ZoneEightController implements Initializable {
     Image primroseImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Primrose.jpg")));
     Image roseImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Rose.jpg")));
     Image wisteriaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Wisteria.jpg")));
-
-    private ObservableList<Plant> plant = FXCollections.observableArrayList();
 
     //Search button
     public void buttonSearch(ActionEvent e) throws IOException {
@@ -299,70 +358,10 @@ public class ZoneEightController implements Initializable {
             invalid.showAndWait();
             root = wrong.load();
         }
-            stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-
-        }
-
-
-    //Back Button Controller
-    public void back(ActionEvent e) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("ZonePick.fxml"));
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        System.out.println("You have gone back");
-    }
 
-
-    //Initializes Columns
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        //Sets up Columns
-        plantName.setCellValueFactory(new PropertyValueFactory<Plant, String>("plantName"));
-        tableView.setItems(getPlant());
-            //Below is what makes the table searchable
-            //Filtered List
-            FilteredList<Plant> plantFilteredList = new FilteredList<>(plant, b -> true);
-            filterField.textProperty().addListener((observable, oldValue, newValue) -> {
-                plantFilteredList.setPredicate(plant -> {
-                    if (newValue == null || newValue.isEmpty()) {
-                        return true;
-                    }
-                    String lowerCaseFilter = newValue.toLowerCase();
-                    if (plant.getPlantName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-
-                });
-            });
-            //Sorted List
-            SortedList<Plant> sortedList = new SortedList<>(plantFilteredList);
-            sortedList.comparatorProperty().bind(tableView.comparatorProperty());
-            tableView.setItems(sortedList);
-
-    }
-    //Add to Table
-    public ObservableList<Plant> getPlant(){
-        //ObservableList<Plant> plant = FXCollections.observableArrayList();
-        plant.addAll(new Plant("Agapanthus"), new Plant("Alchemilla"), new Plant("Allium"), new Plant("Alstroemeria"),new Plant("Alyssum"), new Plant("Anemone")
-                , new Plant("Anise Hyssop"), new Plant("Armeria Maritima"), new Plant("Aster"), new Plant("Azalea"), new Plant("Baby's Breath"), new Plant("Bachelor's Button")
-                , new Plant("Balloon Flower"), new Plant("Ballota"), new Plant("Bee Balm"), new Plant("Begonia"), new Plant("Bergamot"), new Plant("Bergenia")
-                , new Plant("Black-eyed Susan"), new Plant("Blanket Flower"), new Plant("Blazing Star"), new Plant("Bleeding Heart"), new Plant("Bletilla"), new Plant("Blue-eyed Grass")
-                , new Plant("Bluebonnets"), new Plant("Bluestar Flower"), new Plant("Borage"),new Plant("Bottlebrush"), new Plant("Bouvardia"), new Plant("Brachyscome"), new Plant("Brassica")
-                , new Plant("Broom"), new Plant("Buttercup"), new Plant("Butterfly Bush"), new Plant("Cardinal Flower"), new Plant("Calendula"), new Plant("Camellia"), new Plant("Candytuft")
-                , new Plant("Cape Leadwort"), new Plant("Carnation"), new Plant("Catmint"), new Plant("Chicory"), new Plant("Chionodoxa"), new Plant("Chrysanthemum")
-                , new Plant("Clarkia"), new Plant("Clematis"), new Plant("Clover"), new Plant("Columbine"), new Plant("Coneflower"), new Plant("Coral Bells")
-                , new Plant("Coreopsis"), new Plant("Cornflower"), new Plant("Corydalis"), new Plant("Cosmos"), new Plant("Cotoneaster"),new Plant("Crocosmia"), new Plant("Crocus")
-                , new Plant("Crown Imperial"), new Plant("Cuckoo Flower"), new Plant("Daffodil"), new Plant("Dahlia"), new Plant("Daisy"), new Plant("Dandelion"), new Plant("Daphne")
-                , new Plant("Daylily"), new Plant("Decumaria"), new Plant("Deutzia"), new Plant("Dianthus Barbatus"), new Plant("Diascia"), new Plant("Dutch Iris"), new Plant("Geranium")
-                , new Plant("Hollyhock"), new Plant("Lavender"), new Plant("Lilac"), new Plant("Lily"), new Plant("Marguerite"), new Plant("Marigold"), new Plant("Morning Glory")
-                , new Plant("Primrose"), new Plant("Rose"), new Plant("Wisteria"));
-        return plant;
     }
 }

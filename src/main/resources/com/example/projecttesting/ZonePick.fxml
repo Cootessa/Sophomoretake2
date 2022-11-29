@@ -17,7 +17,7 @@
       </ImageView>
       <Label layoutX="88.0" layoutY="11.0" prefHeight="83.0" prefWidth="366.0" text="To select zone click corrosponding color button below" textAlignment="CENTER" wrapText="true">
          <font>
-            <Font size="19.0" />
+            <Font name="Bodoni MT" size="24.0" />
          </font>
       </Label>
       <Button layoutX="268.0" layoutY="496.0" mnemonicParsing="false" onAction="#zone4" prefHeight="58.0" prefWidth="61.0">
@@ -119,6 +119,6 @@
          <padding>
             <Insets top="1.0" />
          </padding></Button>
-      <Button layoutX="510.0" layoutY="40.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Button layoutX="510.0" layoutY="40.0" mnemonicParsing="false" onAction="#exit" style="-fx-border-color: #ce9ff2;" styleClass="searchbutton" stylesheets="@style.css" text="Exit" />
    </children>
 </AnchorPane>

@@ -12,8 +12,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PlantPage {
+//Controller for showing Plants for Zone 2
 
+
+public class PlantPage {
 
     @FXML
     private Stage stage;
@@ -22,19 +24,18 @@ public class PlantPage {
     @FXML ImageView flowerPic;
 
 
-
+    //Display Plant Picture
     public void displayPicture(Image flower) {
         flowerPic.setImage(flower);
     }
 
 
-
+    //Back Button
     public void back(ActionEvent e) throws IOException {
         root = FXMLLoader.load(getClass().getResource("ZoneTwoScreen.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        System.out.println("You have gone back");
     }
 }

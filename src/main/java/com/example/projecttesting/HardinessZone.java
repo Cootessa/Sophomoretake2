@@ -6,15 +6,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+//Start up
 
-public class HelloApplication extends Application {
+public class HardinessZone extends Application {
     @Override
     public void start(Stage stage) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
             Scene scene = new Scene(root);
-            stage.setTitle("Hello!");
+            stage.setTitle("U.S. Plant Hardiness");
             stage.setScene(scene);
             stage.show();
         }

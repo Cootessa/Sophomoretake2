@@ -10,24 +10,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecttesting.ZoneFiveController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecttesting.ZoneFiveController">
    <children>
       <ImageView fitHeight="830.0" fitWidth="667.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Background.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
-      <TextField fx:id="filterField" layoutX="77.0" layoutY="294.0" prefHeight="25.0" prefWidth="352.0" />
-      <Button layoutX="443.0" layoutY="294.0" mnemonicParsing="false" onAction="#buttonSearch" text="Search" />
-      <TableView fx:id="tableView" layoutX="83.0" layoutY="328.0" prefHeight="339.0" prefWidth="398.0">
+      <ImageView fitHeight="209.0" fitWidth="497.0" layoutX="33.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Zone%205%20Map.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" style="-fx-border-color: #ce9ff2;" styleClass="searchbutton" stylesheets="@style.css" text="Back" />
+      <TextField fx:id="filterField" layoutX="71.0" layoutY="313.0" prefHeight="25.0" prefWidth="352.0" style="-fx-border-color: #ce9ff2;" />
+      <Button layoutX="432.0" layoutY="313.0" mnemonicParsing="false" onAction="#buttonSearch" style="-fx-border-color: #ce9ff2;" styleClass="searchbutton" stylesheets="@style.css" text="Search" />
+      <TableView fx:id="tableView" layoutX="71.0" layoutY="347.0" prefHeight="339.0" prefWidth="398.0" style="-fx-border-color: #ce9ff2;">
         <columns>
-          <TableColumn fx:id="plantName" prefWidth="397.0" text="Flower Name" />
+          <TableColumn fx:id="plantName" prefWidth="397.0" text="Plant Name" />
         </columns>
       </TableView>
-      <Label layoutX="169.0" layoutY="39.0" prefHeight="64.0" prefWidth="226.0" text="     Zone 5 Plants" textAlignment="CENTER">
+      <Label layoutX="168.0" layoutY="27.0" prefHeight="64.0" prefWidth="226.0" text="     Zone 5 Plants" textAlignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Bodoni MT" size="30.0" />
          </font>
       </Label>
    </children>

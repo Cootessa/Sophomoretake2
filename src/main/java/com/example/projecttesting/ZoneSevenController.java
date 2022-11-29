@@ -21,20 +21,18 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+//Controller for Zone 7
+
 public class ZoneSevenController implements Initializable {
 
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private Label label;
-    private Label invalid;
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
     private ObservableList<Plant> plant = FXCollections.observableArrayList();
-
-
 
 
     //Back Button Controller
@@ -44,7 +42,6 @@ public class ZoneSevenController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        System.out.println("You have gone back");
     }
 
 

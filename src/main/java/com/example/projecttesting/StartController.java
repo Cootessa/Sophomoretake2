@@ -12,21 +12,25 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+//Controller for starting menu
+
 public class StartController {
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
 
+
+    //Button to enter
     public void enter(ActionEvent e) throws IOException {
         root = FXMLLoader.load(getClass().getResource("ZonePick.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        System.out.println("You entered");
     }
 
+    //Button to exit
     public void exit(ActionEvent e) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Exit");

@@ -22,20 +22,18 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+//Controller for Zone 2
+
 public class Zonetwocontroller implements Initializable {
 
     @FXML
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private Label label;
-    private Label invalid;
     @FXML private TextField filterField;
     @FXML private TableView<Plant> tableView;
     @FXML private TableColumn<Plant, String> plantName;
-
     private ObservableList<Plant> plant = FXCollections.observableArrayList();
-
 
 
     //Back Button Controller
@@ -45,7 +43,6 @@ public class Zonetwocontroller implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        System.out.println("You have gone back");
     }
 
 
@@ -100,7 +97,16 @@ public class Zonetwocontroller implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("PlantPageZone2.fxml"));
         root = loader.load();
         PlantPage plantPage = loader.getController();
-        if (inputSearch.equalsIgnoreCase("Begonia")) {
+        if(((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
+            FXMLLoader wrong = new FXMLLoader(getClass().getResource("ZoneTwoScreen.fxml"));
+            Alert invalid = new Alert(Alert.AlertType.WARNING);
+            invalid.setTitle("Invalid Plant");
+            invalid.setHeaderText("Invalid plant has been entered");
+            invalid.setContentText("The plant you have entered does not exist in this zone or was misspelled. Please try again.");
+            invalid.showAndWait();
+            root = wrong.load();
+        }
+        else if (inputSearch.equalsIgnoreCase("Begonia")) {
             plantPage.displayPicture(begoniaImage);
         }
         else if (inputSearch.equalsIgnoreCase("Blue-eyed Grass")) {
@@ -117,15 +123,6 @@ public class Zonetwocontroller implements Initializable {
         }
         else if (inputSearch.equalsIgnoreCase("Marigold")) {
             plantPage.displayPicture(marigoldImage);
-        }
-        else if(((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
-            FXMLLoader wrong = new FXMLLoader(getClass().getResource("ZoneTwoScreen.fxml"));
-            Alert invalid = new Alert(Alert.AlertType.WARNING);
-            invalid.setTitle("Invalid Plant");
-            invalid.setHeaderText("Invalid plant has been entered");
-            invalid.setContentText("The plant you have entered does not exist in this zone or was misspelled. Please try again.");
-            invalid.showAndWait();
-            root = wrong.load();
         }
 
 

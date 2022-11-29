@@ -22,17 +22,17 @@
             <Image url="@Zone%20Map%2010.png" />
          </image>
       </ImageView>
-      <Button layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
-      <TextField fx:id="filterField" layoutX="71.0" layoutY="319.0" prefHeight="25.0" prefWidth="352.0" />
-      <Button layoutX="429.0" layoutY="319.0" mnemonicParsing="false" onAction="#buttonSearch" text="Search" />
-      <TableView fx:id="tableView" layoutX="71.0" layoutY="350.0" prefHeight="339.0" prefWidth="398.0">
+      <Button layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" style="-fx-border-color: #ce9ff2;" styleClass="searchbutton" stylesheets="@style.css" text="Back" />
+      <TextField fx:id="filterField" layoutX="71.0" layoutY="319.0" prefHeight="25.0" prefWidth="352.0" style="-fx-border-color: #ce9ff2;" />
+      <Button layoutX="429.0" layoutY="319.0" mnemonicParsing="false" onAction="#buttonSearch" style="-fx-border-color: #ce9ff2;" styleClass="searchbutton" stylesheets="@style.css" text="Search" />
+      <TableView fx:id="tableView" layoutX="71.0" layoutY="350.0" prefHeight="339.0" prefWidth="398.0" style="-fx-border-color: #ce9ff2;">
         <columns>
-          <TableColumn fx:id="plantName" prefWidth="397.0" text="Flower Name" />
+          <TableColumn fx:id="plantName" prefWidth="397.0" text="Plant Name" />
         </columns>
       </TableView>
-      <Label layoutX="187.0" layoutY="27.0" prefHeight="64.0" prefWidth="226.0" text="     Zone 10 Plants" textAlignment="CENTER">
+      <Label layoutX="173.0" layoutY="27.0" prefHeight="64.0" prefWidth="226.0" text="     Zone 10 Plants" textAlignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Bodoni MT" size="30.0" />
          </font>
       </Label>
    </children>
