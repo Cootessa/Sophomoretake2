@@ -15,6 +15,7 @@ public class HardinessZone extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
             Scene scene = new Scene(root);
             stage.setTitle("U.S. Plant Hardiness");
+            stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
         }
