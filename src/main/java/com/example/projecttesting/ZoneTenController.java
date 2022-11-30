@@ -233,7 +233,7 @@ public class ZoneTenController implements Initializable {
             plantPage.displayPicture(wisteriaImage);
         }
 
-        else if(((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
+        else {
             FXMLLoader wrong = new FXMLLoader(getClass().getResource("ZoneTenScreen.fxml"));
             Alert invalid = new Alert(Alert.AlertType.WARNING);
             invalid.setTitle("Invalid Plant");

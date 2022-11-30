@@ -348,8 +348,7 @@ public class ZoneEightController implements Initializable {
         else if (inputSearch.equalsIgnoreCase("Wisteria")) {
             plantPage.displayPicture(wisteriaImage);
         }
-
-        else if(((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
+        else {
             FXMLLoader wrong = new FXMLLoader(getClass().getResource("ZoneEightScreen.fxml"));
             Alert invalid = new Alert(Alert.AlertType.WARNING);
             invalid.setTitle("Invalid Plant");

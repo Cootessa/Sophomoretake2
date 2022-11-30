@@ -251,7 +251,7 @@ public class ZoneThreeController implements Initializable {
         else if (inputSearch.equalsIgnoreCase("Tulip")) {
             plantPage.displayPicture(tulipImage);
         }
-        else if(((!inputSearch.equals("")) && (inputSearch!= null)) && inputSearch.matches("^[a-zA-Z]*$")){
+        else {
             FXMLLoader wrong = new FXMLLoader(getClass().getResource("ZoneThreeScreen.fxml"));
             Alert invalid = new Alert(Alert.AlertType.WARNING);
             invalid.setTitle("Invalid Plant");
